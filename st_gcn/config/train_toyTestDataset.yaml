@@ -1,0 +1,24 @@
+experiment: /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45
+dataset_split: 'toyTestDataset/split/split_toy.json'
+log_file: '/scratch/ychen855/hand_gesture/st_gcn/report_results/toyTest-win9.txt'
+
+dataset: '/scratch/ychen855/hand_gesture/st_gcn/toyTestDataset/json_data'
+pretrained: False
+#resume: pretrained_kinetics400/checkpoint_kinetics400_pretrain_epoch80.pt
+train_batch: 128
+time_window: 45
+workers: 8
+num_actions: 7
+sample_interval: 1 # typically target for 30fps, use 1; if raw videos were 60fps, use 2.
+dropout: 0.2 # for training
+num_keypoints: 21
+base_lr: 0.01
+steps: [30, 50, 80]
+epochs: 300
+patiences: 50
+disable_cuda: False # disable if running on MacOS
+export_only: False
+random_sample: False
+uniform_sample: False
+dataset_cfg: 0 
+actions: ["background", "draw-check", "draw-cross", "point-left", "point-right", "rotate-ccw", "rotate-cw"]

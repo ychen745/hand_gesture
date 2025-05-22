@@ -1,0 +1,8 @@
+Save training logs to file /scratch/ychen855/hand_gesture/st_gcn/report_results/toyTest-win9.txt
+Namespace(config='/scratch/ychen855/hand_gesture/st_gcn/config/train_toyTestDataset.yaml', disable_cuda=False, dataset='/scratch/ychen855/hand_gesture/st_gcn/toyTestDataset/json_data', dataset_split='toyTestDataset/split/split_toy.json', log_file='/scratch/ychen855/hand_gesture/st_gcn/report_results/toyTest-win9.txt', dataset_cfg=0, train_batch=128, base_lr=0.01, dropout=0.2, epochs=300, workers=8, export_only=False, resume='/scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch253_val74_train76.pt', experiment='/scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45', pretrained=False, num_keypoints=21, time_window=45, slack_len=0, num_actions=7, patiences=50, sample_interval=1, test_only=True, random_sample=False, uniform_sample=False, steps=[30, 50, 80], actions=['background', 'draw-check', 'draw-cross', 'point-left', 'point-right', 'rotate-ccw', 'rotate-cw'])
+Load adjacency matrix for 21-joint hand pose...
+testing on CUDA devices
+model path: /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch253_val74_train76.pt device: cuda
+Loaded model from /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch253_val74_train76.pt.
+tensor([[ 0.4055, -0.1810,  1.8894, -0.0906, -0.9214,  0.4207, -2.1724]],
+       device='cuda:0', grad_fn=<ViewBackward0>)

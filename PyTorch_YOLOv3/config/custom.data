@@ -1,0 +1,4 @@
+classes=1
+train=/scratch/ychen855/hand_gesture/PyTorch-YOLOv3/data/custom/train.txt
+valid=/scratch/ychen855/hand_gesture/PyTorch-YOLOv3/data/custom/valid.txt
+names=/scratch/ychen855/hand_gesture/PyTorch-YOLOv3/data/custom/classes.names

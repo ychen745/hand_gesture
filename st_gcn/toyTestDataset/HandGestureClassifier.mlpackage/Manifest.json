@@ -1,0 +1,24 @@
+{
+    "fileFormatVersion": "1.0.0",
+    "itemInfoEntries": {
+        "19DF9D99-E480-4591-8DF3-EC0C51EE4DB1": {
+            "author": "com.apple.CoreML",
+            "description": "CoreML Model Specification",
+            "name": "HandGestureClassifier.mlmodel",
+            "path": "com.apple.CoreML/HandGestureClassifier.mlmodel"
+        },
+        "99F3A1B4-1C62-4CE0-9CD2-D65FFEA90CAA": {
+            "author": "com.apple.CoreML",
+            "description": "External FeatureDescription Overlay",
+            "name": "FeatureDescriptions.json",
+            "path": "com.apple.CoreML/FeatureDescriptions.json"
+        },
+        "B2F62603-7FAC-4928-BD56-A5817EA08C04": {
+            "author": "com.apple.CoreML",
+            "description": "External Metadata Overlay",
+            "name": "Metadata.json",
+            "path": "com.apple.CoreML/Metadata.json"
+        }
+    },
+    "rootModelIdentifier": "19DF9D99-E480-4591-8DF3-EC0C51EE4DB1"
+}

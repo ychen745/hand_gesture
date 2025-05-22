@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/scratch/ychen855/hand_gesture/st_gcn/train.py", line 5, in <module>
+    import torch
+  File "/scratch/ychen855/miniconda3/envs/hand/lib/python3.11/site-packages/torch/__init__.py", line 290, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

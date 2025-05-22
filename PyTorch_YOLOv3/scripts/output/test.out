@@ -1,0 +1,14 @@
+Environment information:
+System: Linux 4.18.0-553.45.1.el8_10.x86_64
+Current Version: PyTorchYolo 1.8.0
+No git or repo found
+Command line arguments: Namespace(model='/scratch/ychen855/hand_gesture/PyTorch_YOLOv3/config/hand_yolo.cfg', weights='/scratch/ychen855/hand_gesture/PyTorch_YOLOv3/checkpoints/hand_yolo/200.pth', data='/scratch/ychen855/hand_gesture/PyTorch_YOLOv3/config/hand_yolo.data', batch_size=8, verbose=False, img_size=416, n_cpu=4, iou_thres=0.5, conf_thres=0.01, nms_thres=0.4)
+WARNING: NMS time limit 1.0s exceeded
++-------+-------+---------+
+| Index | Class | AP      |
++-------+-------+---------+
+| 0     | hand  | 0.75112 |
++-------+-------+---------+
+---- mAP 0.75112 ----
+Precision: [0.41403265], recall: [0.83414976] AP: [0.75111898], f1: [0.55338904], ap_class: [0]
+

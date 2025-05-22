@@ -1,0 +1,10 @@
+{
+  "MLModelVersionStringKey" : "1.0",
+  "MLModelDescriptionKey" : "Recognize a static or dynamic hand gesture from a single or a series of hand poses.",
+  "MLModelCreatorDefinedKey" : {
+    "com.github.apple.coremltools.version" : "4.0.2",
+    "com.github.apple.coremltools.source" : "torch==1.6.0"
+  },
+  "MLModelAuthorKey" : "--",
+  "MLModelLicenseKey" : "MIT"
+}

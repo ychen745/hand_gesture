@@ -1,0 +1,4 @@
+classes=1
+train=/scratch/ychen855/Data/hand_yolo/train.txt
+valid=/scratch/ychen855/Data/hand_yolo/test.txt
+names=/scratch/ychen855/Data/hand_yolo/classes.names

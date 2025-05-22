@@ -1,0 +1,1882 @@
+Save training logs to file /scratch/ychen855/hand_gesture/st_gcn/report_results/toyTest-win45.txt
+Namespace(config='/scratch/ychen855/hand_gesture/st_gcn/config/train_toyTestDataset.yaml', disable_cuda=False, dataset='/scratch/ychen855/hand_gesture/st_gcn/toyTestDataset/json_data', dataset_split='toyTestDataset/split/split_toy.json', log_file='/scratch/ychen855/hand_gesture/st_gcn/report_results/toyTest-win45.txt', dataset_cfg=0, train_batch=128, base_lr=0.01, dropout=0.2, epochs=300, workers=8, export_only=False, resume=None, experiment='/scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45', pretrained=False, num_keypoints=21, time_window=45, slack_len=0, num_actions=7, patiences=50, sample_interval=1, test_only=False, random_sample=False, uniform_sample=False, steps=[30, 50, 80], actions=['background', 'draw-check', 'draw-cross', 'point-left', 'point-right', 'rotate-ccw', 'rotate-cw'])
+trainng on CUDA devices
+Load adjacency matrix for 21-joint hand pose...
+loading data
+active_classes: ['background', 'draw-check', 'draw-cross', 'point-left', 'point-right', 'rotate-ccw', 'rotate-cw']
+split_file: toyTestDataset/split/split_toy.json
+Split partition  val  files count:  35
+loaded data : testing (35)
+active_classes: ['background', 'draw-check', 'draw-cross', 'point-left', 'point-right', 'rotate-ccw', 'rotate-cw']
+split_file: toyTestDataset/split/split_toy.json
+Split partition  train  files count:  70
+loaded data : training (70)
+Time elapsed: 5.9411
+train avgLoss:  tensor(1.9571, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  11.77652645111084
+One unit validate time:  0.2996091842651367
+One unit total time:  12.076135635375977
+epoch 0 : training accuracy 15.714286, testing accuracy 14.285714, time elapsed 18.0173
+train avgLoss:  tensor(1.9597, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.3630821704864502
+One unit validate time:  0.16623353958129883
+One unit total time:  0.529315710067749
+epoch 1 : training accuracy 14.285714, testing accuracy 14.285714, time elapsed 18.5469
+train avgLoss:  tensor(1.9374, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.275010347366333
+One unit validate time:  0.16381263732910156
+One unit total time:  0.43882298469543457
+epoch 2 : training accuracy 20.000002, testing accuracy 14.285714, time elapsed 18.9860
+train avgLoss:  tensor(1.9062, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2831277847290039
+One unit validate time:  0.17780637741088867
+One unit total time:  0.4609341621398926
+epoch 3 : training accuracy 25.714285, testing accuracy 14.285714, time elapsed 19.4471
+train avgLoss:  tensor(1.9029, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.27733945846557617
+One unit validate time:  0.17339110374450684
+One unit total time:  0.450730562210083
+epoch 4 : training accuracy 18.571428, testing accuracy 14.285714, time elapsed 19.8981
+train avgLoss:  tensor(1.8643, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28623294830322266
+One unit validate time:  0.16708803176879883
+One unit total time:  0.4533209800720215
+epoch 5 : training accuracy 18.571428, testing accuracy 14.285714, time elapsed 20.3516
+train avgLoss:  tensor(1.8489, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2876136302947998
+One unit validate time:  0.17035460472106934
+One unit total time:  0.45796823501586914
+epoch 6 : training accuracy 20.000002, testing accuracy 14.285714, time elapsed 20.8098
+train avgLoss:  tensor(1.8483, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2861945629119873
+One unit validate time:  0.16855978965759277
+One unit total time:  0.4547543525695801
+epoch 7 : training accuracy 21.428572, testing accuracy 14.285714, time elapsed 21.2648
+train avgLoss:  tensor(1.8139, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2947366237640381
+One unit validate time:  0.17943286895751953
+One unit total time:  0.4741694927215576
+epoch 8 : training accuracy 21.428572, testing accuracy 14.285714, time elapsed 21.7392
+train avgLoss:  tensor(1.7703, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.275437593460083
+One unit validate time:  0.1635751724243164
+One unit total time:  0.4390127658843994
+epoch 9 : training accuracy 31.428570, testing accuracy 14.285714, time elapsed 22.1785
+train avgLoss:  tensor(1.7777, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29300427436828613
+One unit validate time:  0.1745920181274414
+One unit total time:  0.46759629249572754
+epoch 10 : training accuracy 31.428572, testing accuracy 14.285714, time elapsed 22.6463
+train avgLoss:  tensor(1.7513, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.278087854385376
+One unit validate time:  0.17038512229919434
+One unit total time:  0.4484729766845703
+epoch 11 : training accuracy 29.999998, testing accuracy 14.285714, time elapsed 23.0950
+train avgLoss:  tensor(1.6931, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28901195526123047
+One unit validate time:  0.16691231727600098
+One unit total time:  0.45592427253723145
+epoch 12 : training accuracy 37.142857, testing accuracy 14.285714, time elapsed 23.5511
+train avgLoss:  tensor(1.7669, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28681039810180664
+One unit validate time:  0.16671180725097656
+One unit total time:  0.4535222053527832
+epoch 13 : training accuracy 30.000002, testing accuracy 14.285714, time elapsed 24.0049
+train avgLoss:  tensor(1.7277, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.289553165435791
+One unit validate time:  0.18025588989257812
+One unit total time:  0.46980905532836914
+epoch 14 : training accuracy 32.857143, testing accuracy 14.285714, time elapsed 24.4749
+train avgLoss:  tensor(1.6889, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28517603874206543
+One unit validate time:  0.16852974891662598
+One unit total time:  0.4537057876586914
+epoch 15 : training accuracy 32.857143, testing accuracy 14.285714, time elapsed 24.9289
+train avgLoss:  tensor(1.6400, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28214073181152344
+One unit validate time:  0.1611924171447754
+One unit total time:  0.44333314895629883
+epoch 16 : training accuracy 42.857143, testing accuracy 14.285714, time elapsed 25.3724
+train avgLoss:  tensor(1.5640, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.27753496170043945
+One unit validate time:  0.1712207794189453
+One unit total time:  0.44875574111938477
+epoch 17 : training accuracy 42.857143, testing accuracy 14.285714, time elapsed 25.8214
+train avgLoss:  tensor(1.5419, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2990083694458008
+One unit validate time:  0.1731090545654297
+One unit total time:  0.47211742401123047
+epoch 18 : training accuracy 38.571430, testing accuracy 14.285714, time elapsed 26.2937
+train avgLoss:  tensor(1.6506, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2797408103942871
+One unit validate time:  0.18577861785888672
+One unit total time:  0.46551942825317383
+epoch 19 : training accuracy 37.142857, testing accuracy 14.285714, time elapsed 26.7595
+train avgLoss:  tensor(1.5602, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2815854549407959
+One unit validate time:  0.18146181106567383
+One unit total time:  0.4630472660064697
+epoch 20 : training accuracy 38.571430, testing accuracy 14.285714, time elapsed 27.2228
+train avgLoss:  tensor(1.5060, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2864060401916504
+One unit validate time:  0.1699965000152588
+One unit total time:  0.4564025402069092
+epoch 21 : training accuracy 45.714283, testing accuracy 14.285714, time elapsed 27.6794
+train avgLoss:  tensor(1.4647, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.30182385444641113
+One unit validate time:  0.16539859771728516
+One unit total time:  0.4672224521636963
+epoch 22 : training accuracy 50.000000, testing accuracy 14.285714, time elapsed 28.1469
+train avgLoss:  tensor(1.4581, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2883312702178955
+One unit validate time:  0.1654820442199707
+One unit total time:  0.4538133144378662
+epoch 23 : training accuracy 50.000000, testing accuracy 14.285714, time elapsed 28.6009
+train avgLoss:  tensor(1.3852, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29716062545776367
+One unit validate time:  0.17275333404541016
+One unit total time:  0.46991395950317383
+epoch 24 : training accuracy 54.285713, testing accuracy 14.285714, time elapsed 29.0710
+train avgLoss:  tensor(1.3823, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2897453308105469
+One unit validate time:  0.16466355323791504
+One unit total time:  0.4544088840484619
+epoch 25 : training accuracy 50.000000, testing accuracy 14.285714, time elapsed 29.5257
+train avgLoss:  tensor(1.4637, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2911803722381592
+One unit validate time:  0.16751718521118164
+One unit total time:  0.4586975574493408
+epoch 26 : training accuracy 44.285713, testing accuracy 14.285714, time elapsed 29.9846
+train avgLoss:  tensor(1.3315, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2865259647369385
+One unit validate time:  0.17389130592346191
+One unit total time:  0.4604172706604004
+epoch 27 : training accuracy 51.428570, testing accuracy 14.285714, time elapsed 30.4453
+train avgLoss:  tensor(1.3639, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.30197739601135254
+One unit validate time:  0.16422009468078613
+One unit total time:  0.46619749069213867
+epoch 28 : training accuracy 48.571430, testing accuracy 14.285714, time elapsed 30.9117
+train avgLoss:  tensor(1.3882, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29013848304748535
+One unit validate time:  0.1608903408050537
+One unit total time:  0.45102882385253906
+epoch 29 : training accuracy 47.142857, testing accuracy 14.285714, time elapsed 31.3630
+adjust learning rate to 0.001000
+train avgLoss:  tensor(1.4267, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2833726406097412
+One unit validate time:  0.1765613555908203
+One unit total time:  0.4599339962005615
+epoch 30 : training accuracy 54.285713, testing accuracy 14.285714, time elapsed 31.8232
+train avgLoss:  tensor(1.3119, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29511356353759766
+One unit validate time:  0.17447471618652344
+One unit total time:  0.4695882797241211
+epoch 31 : training accuracy 47.142860, testing accuracy 14.285714, time elapsed 32.2930
+train avgLoss:  tensor(1.1787, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2830936908721924
+One unit validate time:  0.18515396118164062
+One unit total time:  0.468247652053833
+epoch 32 : training accuracy 59.999996, testing accuracy 14.285714, time elapsed 32.7615
+train avgLoss:  tensor(1.2614, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29154396057128906
+One unit validate time:  0.15950942039489746
+One unit total time:  0.4510533809661865
+epoch 33 : training accuracy 54.285717, testing accuracy 14.285714, time elapsed 33.2127
+train avgLoss:  tensor(1.1598, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.282670259475708
+One unit validate time:  0.17139625549316406
+One unit total time:  0.45406651496887207
+epoch 34 : training accuracy 61.428577, testing accuracy 14.285714, time elapsed 33.6670
+train avgLoss:  tensor(1.1285, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.27813100814819336
+One unit validate time:  0.17464566230773926
+One unit total time:  0.4527766704559326
+epoch 35 : training accuracy 58.571430, testing accuracy 14.285714, time elapsed 34.1200
+train avgLoss:  tensor(1.1647, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.27580976486206055
+One unit validate time:  0.17058181762695312
+One unit total time:  0.44639158248901367
+epoch 36 : training accuracy 57.142853, testing accuracy 14.285714, time elapsed 34.5667
+train avgLoss:  tensor(1.1024, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.27971577644348145
+One unit validate time:  0.1725172996520996
+One unit total time:  0.45223307609558105
+epoch 37 : training accuracy 57.142853, testing accuracy 14.285714, time elapsed 35.0192
+train avgLoss:  tensor(1.1112, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2795145511627197
+One unit validate time:  0.17206287384033203
+One unit total time:  0.45157742500305176
+epoch 38 : training accuracy 58.571430, testing accuracy 14.285714, time elapsed 35.4710
+train avgLoss:  tensor(1.0761, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28487181663513184
+One unit validate time:  0.16307640075683594
+One unit total time:  0.4479482173919678
+epoch 39 : training accuracy 62.857143, testing accuracy 14.285714, time elapsed 35.9191
+train avgLoss:  tensor(1.0216, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2873845100402832
+One unit validate time:  0.17464423179626465
+One unit total time:  0.46202874183654785
+epoch 40 : training accuracy 61.428577, testing accuracy 14.285714, time elapsed 36.3814
+train avgLoss:  tensor(1.0463, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2841451168060303
+One unit validate time:  0.16632795333862305
+One unit total time:  0.4504730701446533
+epoch 41 : training accuracy 70.000000, testing accuracy 14.285714, time elapsed 36.8321
+train avgLoss:  tensor(1.0141, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2935366630554199
+One unit validate time:  0.16889047622680664
+One unit total time:  0.46242713928222656
+epoch 42 : training accuracy 68.571434, testing accuracy 14.285714, time elapsed 37.2947
+train avgLoss:  tensor(0.9732, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2844727039337158
+One unit validate time:  0.16962289810180664
+One unit total time:  0.45409560203552246
+epoch 43 : training accuracy 75.714287, testing accuracy 14.285714, time elapsed 37.7491
+train avgLoss:  tensor(1.0044, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28352975845336914
+One unit validate time:  0.17396092414855957
+One unit total time:  0.4574906826019287
+epoch 44 : training accuracy 67.142860, testing accuracy 14.285714, time elapsed 38.2068
+train avgLoss:  tensor(0.9884, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28330063819885254
+One unit validate time:  0.16382265090942383
+One unit total time:  0.44712328910827637
+epoch 45 : training accuracy 62.857143, testing accuracy 14.285714, time elapsed 38.6541
+train avgLoss:  tensor(1.0226, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2947580814361572
+One unit validate time:  0.1710667610168457
+One unit total time:  0.46582484245300293
+epoch 46 : training accuracy 64.285713, testing accuracy 14.285714, time elapsed 39.1202
+train avgLoss:  tensor(0.8961, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28684401512145996
+One unit validate time:  0.16336369514465332
+One unit total time:  0.4502077102661133
+epoch 47 : training accuracy 74.285713, testing accuracy 14.285714, time elapsed 39.5706
+train avgLoss:  tensor(0.9533, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2911403179168701
+One unit validate time:  0.170440673828125
+One unit total time:  0.4615809917449951
+epoch 48 : training accuracy 69.999992, testing accuracy 14.285714, time elapsed 40.0324
+train avgLoss:  tensor(0.9649, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.27791833877563477
+One unit validate time:  0.1709575653076172
+One unit total time:  0.44887590408325195
+epoch 49 : training accuracy 70.000000, testing accuracy 14.285714, time elapsed 40.4815
+adjust learning rate to 0.000100
+train avgLoss:  tensor(0.8979, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28730273246765137
+One unit validate time:  0.1672675609588623
+One unit total time:  0.45457029342651367
+epoch 50 : training accuracy 74.285713, testing accuracy 14.285714, time elapsed 40.9363
+train avgLoss:  tensor(0.8870, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2840290069580078
+One unit validate time:  0.16754722595214844
+One unit total time:  0.45157623291015625
+epoch 51 : training accuracy 78.571426, testing accuracy 14.285714, time elapsed 41.3881
+train avgLoss:  tensor(0.9474, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29216670989990234
+One unit validate time:  0.16542482376098633
+One unit total time:  0.45759153366088867
+epoch 52 : training accuracy 74.285713, testing accuracy 14.285714, time elapsed 41.8459
+train avgLoss:  tensor(0.9865, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2970612049102783
+One unit validate time:  0.1695704460144043
+One unit total time:  0.4666316509246826
+epoch 53 : training accuracy 64.285713, testing accuracy 14.285714, time elapsed 42.3128
+train avgLoss:  tensor(0.9291, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28205275535583496
+One unit validate time:  0.16413664817810059
+One unit total time:  0.44618940353393555
+epoch 54 : training accuracy 70.000000, testing accuracy 14.285714, time elapsed 42.7592
+train avgLoss:  tensor(0.9230, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29843592643737793
+One unit validate time:  0.1819918155670166
+One unit total time:  0.48042774200439453
+epoch 55 : training accuracy 72.857140, testing accuracy 14.285714, time elapsed 43.2398
+train avgLoss:  tensor(0.9667, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2854177951812744
+One unit validate time:  0.17160868644714355
+One unit total time:  0.45702648162841797
+epoch 56 : training accuracy 64.285713, testing accuracy 14.285714, time elapsed 43.6971
+train avgLoss:  tensor(0.8724, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2774927616119385
+One unit validate time:  0.17042756080627441
+One unit total time:  0.4479203224182129
+epoch 57 : training accuracy 77.142845, testing accuracy 14.285714, time elapsed 44.1452
+train avgLoss:  tensor(0.8558, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28134727478027344
+One unit validate time:  0.1692342758178711
+One unit total time:  0.45058155059814453
+epoch 58 : training accuracy 81.428574, testing accuracy 14.285714, time elapsed 44.5960
+train avgLoss:  tensor(0.9481, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2847905158996582
+One unit validate time:  0.1668698787689209
+One unit total time:  0.4516603946685791
+epoch 59 : training accuracy 68.571434, testing accuracy 14.285714, time elapsed 45.0479
+train avgLoss:  tensor(0.8654, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29767704010009766
+One unit validate time:  0.16922307014465332
+One unit total time:  0.466900110244751
+epoch 60 : training accuracy 77.142860, testing accuracy 14.285714, time elapsed 45.5151
+train avgLoss:  tensor(0.9236, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.27999186515808105
+One unit validate time:  0.18581748008728027
+One unit total time:  0.46580934524536133
+epoch 61 : training accuracy 65.714287, testing accuracy 14.285714, time elapsed 45.9811
+train avgLoss:  tensor(0.9418, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2800571918487549
+One unit validate time:  0.16343140602111816
+One unit total time:  0.44348859786987305
+epoch 62 : training accuracy 70.000000, testing accuracy 14.285714, time elapsed 46.4250
+train avgLoss:  tensor(0.8795, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.27896761894226074
+One unit validate time:  0.1785285472869873
+One unit total time:  0.45749616622924805
+epoch 63 : training accuracy 80.000008, testing accuracy 14.285714, time elapsed 46.8827
+train avgLoss:  tensor(0.9017, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29057955741882324
+One unit validate time:  0.18124127388000488
+One unit total time:  0.4718208312988281
+epoch 64 : training accuracy 74.285713, testing accuracy 14.285714, time elapsed 47.3547
+train avgLoss:  tensor(0.9077, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2917797565460205
+One unit validate time:  0.16679620742797852
+One unit total time:  0.458575963973999
+epoch 65 : training accuracy 71.428574, testing accuracy 14.285714, time elapsed 47.8135
+train avgLoss:  tensor(0.9213, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28023600578308105
+One unit validate time:  0.17444515228271484
+One unit total time:  0.4546811580657959
+epoch 66 : training accuracy 71.428581, testing accuracy 14.285714, time elapsed 48.2684
+train avgLoss:  tensor(0.9221, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2815220355987549
+One unit validate time:  0.1711440086364746
+One unit total time:  0.4526660442352295
+epoch 67 : training accuracy 71.428574, testing accuracy 14.285714, time elapsed 48.7213
+train avgLoss:  tensor(0.9142, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29320573806762695
+One unit validate time:  0.1783449649810791
+One unit total time:  0.47155070304870605
+epoch 68 : training accuracy 71.428574, testing accuracy 14.285714, time elapsed 49.1931
+train avgLoss:  tensor(0.9275, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2858283519744873
+One unit validate time:  0.17595791816711426
+One unit total time:  0.46178627014160156
+epoch 69 : training accuracy 71.428574, testing accuracy 14.285714, time elapsed 49.6551
+train avgLoss:  tensor(0.9281, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28557372093200684
+One unit validate time:  0.17708325386047363
+One unit total time:  0.46265697479248047
+epoch 70 : training accuracy 74.285713, testing accuracy 14.285714, time elapsed 50.1180
+train avgLoss:  tensor(0.9229, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28553199768066406
+One unit validate time:  0.17148637771606445
+One unit total time:  0.4570183753967285
+epoch 71 : training accuracy 70.000000, testing accuracy 14.285714, time elapsed 50.5752
+train avgLoss:  tensor(0.8562, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2967677116394043
+One unit validate time:  0.1694810390472412
+One unit total time:  0.4662487506866455
+epoch 72 : training accuracy 75.714287, testing accuracy 14.285714, time elapsed 51.0417
+train avgLoss:  tensor(0.8851, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2834899425506592
+One unit validate time:  0.17138242721557617
+One unit total time:  0.45487236976623535
+epoch 73 : training accuracy 71.428574, testing accuracy 14.285714, time elapsed 51.4968
+train avgLoss:  tensor(0.8684, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28221988677978516
+One unit validate time:  0.16754603385925293
+One unit total time:  0.4497659206390381
+epoch 74 : training accuracy 78.571426, testing accuracy 14.285714, time elapsed 51.9468
+train avgLoss:  tensor(0.9076, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2858462333679199
+One unit validate time:  0.1662294864654541
+One unit total time:  0.452075719833374
+epoch 75 : training accuracy 70.000000, testing accuracy 14.285714, time elapsed 52.3991
+train avgLoss:  tensor(0.9371, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2920506000518799
+One unit validate time:  0.17841100692749023
+One unit total time:  0.4704616069793701
+epoch 76 : training accuracy 74.285713, testing accuracy 17.142857, time elapsed 52.8698
+train avgLoss:  tensor(0.8667, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2899143695831299
+One unit validate time:  0.16619300842285156
+One unit total time:  0.45610737800598145
+epoch 77 : training accuracy 77.142860, testing accuracy 17.142857, time elapsed 53.3261
+train avgLoss:  tensor(0.9003, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2896456718444824
+One unit validate time:  0.16573071479797363
+One unit total time:  0.45537638664245605
+epoch 78 : training accuracy 72.857147, testing accuracy 20.000000, time elapsed 53.7817
+train avgLoss:  tensor(0.8860, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.3141043186187744
+One unit validate time:  0.16563773155212402
+One unit total time:  0.47974205017089844
+epoch 79 : training accuracy 75.714287, testing accuracy 25.714286, time elapsed 54.2617
+adjust learning rate to 0.000010
+train avgLoss:  tensor(0.8872, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2837085723876953
+One unit validate time:  0.18287134170532227
+One unit total time:  0.4665799140930176
+epoch 80 : training accuracy 75.714287, testing accuracy 31.428571, time elapsed 54.7285
+train avgLoss:  tensor(0.8642, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28832387924194336
+One unit validate time:  0.17477703094482422
+One unit total time:  0.4631009101867676
+epoch 81 : training accuracy 78.571426, testing accuracy 37.142857, time elapsed 55.1919
+train avgLoss:  tensor(0.8970, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29160571098327637
+One unit validate time:  0.17777109146118164
+One unit total time:  0.469376802444458
+epoch 82 : training accuracy 74.285713, testing accuracy 37.142857, time elapsed 55.6615
+train avgLoss:  tensor(0.8741, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28896355628967285
+One unit validate time:  0.1760256290435791
+One unit total time:  0.46498918533325195
+epoch 83 : training accuracy 74.285713, testing accuracy 42.857143, time elapsed 56.1267
+train avgLoss:  tensor(0.9091, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2914705276489258
+One unit validate time:  0.17071866989135742
+One unit total time:  0.4621891975402832
+epoch 84 : training accuracy 67.142853, testing accuracy 42.857143, time elapsed 56.5891
+train avgLoss:  tensor(0.9118, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2902648448944092
+One unit validate time:  0.16423249244689941
+One unit total time:  0.4544973373413086
+epoch 85 : training accuracy 78.571426, testing accuracy 42.857143, time elapsed 57.0438
+train avgLoss:  tensor(0.9359, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2908508777618408
+One unit validate time:  0.1702437400817871
+One unit total time:  0.46109461784362793
+epoch 86 : training accuracy 71.428581, testing accuracy 48.571429, time elapsed 57.5051
+train avgLoss:  tensor(0.9051, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2959558963775635
+One unit validate time:  0.1757340431213379
+One unit total time:  0.47168993949890137
+epoch 87 : training accuracy 74.285713, testing accuracy 51.428571, time elapsed 57.9770
+Confusion matrix: test
+[[2 0 0 0 0 1 2]
+ [1 3 1 0 0 0 0]
+ [0 0 4 0 0 1 0]
+ [1 0 0 4 0 0 0]
+ [0 0 0 0 0 0 5]
+ [0 0 0 0 0 0 5]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch87_val51_train74.pt.
+train avgLoss:  tensor(0.8844, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28874897956848145
+One unit validate time:  0.16751623153686523
+One unit total time:  0.4562652111053467
+epoch 88 : training accuracy 70.000000, testing accuracy 51.428571, time elapsed 58.4770
+Confusion matrix: test
+[[1 1 0 1 0 1 1]
+ [1 3 1 0 0 0 0]
+ [0 0 4 0 0 1 0]
+ [0 0 0 5 0 0 0]
+ [0 0 0 0 0 0 5]
+ [0 0 0 0 0 0 5]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch88_val51_train70.pt.
+train avgLoss:  tensor(0.8818, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2910900115966797
+One unit validate time:  0.17603588104248047
+One unit total time:  0.46712589263916016
+epoch 89 : training accuracy 77.142860, testing accuracy 60.000000, time elapsed 58.9672
+Confusion matrix: test
+[[1 0 0 1 1 1 1]
+ [1 3 1 0 0 0 0]
+ [0 0 4 0 0 1 0]
+ [0 0 0 5 0 0 0]
+ [0 0 0 0 1 0 4]
+ [0 0 0 0 0 2 3]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch89_val60_train77.pt.
+train avgLoss:  tensor(0.8905, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2811112403869629
+One unit validate time:  0.1727004051208496
+One unit total time:  0.4538116455078125
+epoch 90 : training accuracy 72.857140, testing accuracy 51.428571, time elapsed 59.5091
+no improve epochs:  1 best val accuracy:  60.0
+train avgLoss:  tensor(0.8936, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2842254638671875
+One unit validate time:  0.17425227165222168
+One unit total time:  0.4584777355194092
+epoch 91 : training accuracy 74.285713, testing accuracy 54.285714, time elapsed 59.9678
+no improve epochs:  2 best val accuracy:  60.0
+train avgLoss:  tensor(0.8914, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2920191287994385
+One unit validate time:  0.16935300827026367
+One unit total time:  0.46137213706970215
+epoch 92 : training accuracy 78.571426, testing accuracy 57.142857, time elapsed 60.4294
+no improve epochs:  3 best val accuracy:  60.0
+train avgLoss:  tensor(0.8654, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28374671936035156
+One unit validate time:  0.16683340072631836
+One unit total time:  0.4505801200866699
+epoch 93 : training accuracy 80.000000, testing accuracy 60.000000, time elapsed 60.8803
+Confusion matrix: test
+[[1 1 1 1 0 0 1]
+ [1 4 0 0 0 0 0]
+ [0 0 4 0 0 1 0]
+ [0 0 0 5 0 0 0]
+ [0 0 0 0 0 0 5]
+ [0 0 0 0 0 2 3]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch93_val60_train80.pt.
+train avgLoss:  tensor(0.8737, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2847170829772949
+One unit validate time:  0.1691751480102539
+One unit total time:  0.45389223098754883
+epoch 94 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 61.3589
+Confusion matrix: test
+[[1 0 0 1 1 2 0]
+ [1 4 0 0 0 0 0]
+ [0 0 4 0 0 1 0]
+ [0 0 0 5 0 0 0]
+ [0 0 0 0 1 0 4]
+ [0 0 0 0 0 2 3]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch94_val63_train77.pt.
+train avgLoss:  tensor(0.8594, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29086780548095703
+One unit validate time:  0.1772146224975586
+One unit total time:  0.4680824279785156
+epoch 95 : training accuracy 75.714287, testing accuracy 62.857143, time elapsed 61.8548
+Confusion matrix: test
+[[1 0 0 1 1 1 1]
+ [1 4 0 0 0 0 0]
+ [0 1 4 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [0 0 0 0 1 0 4]
+ [0 0 0 0 0 2 3]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch95_val63_train76.pt.
+train avgLoss:  tensor(0.8687, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2995584011077881
+One unit validate time:  0.18028736114501953
+One unit total time:  0.4798457622528076
+epoch 96 : training accuracy 78.571434, testing accuracy 68.571429, time elapsed 62.3594
+Confusion matrix: test
+[[1 1 1 1 1 0 0]
+ [1 4 0 0 0 0 0]
+ [0 1 4 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [0 0 0 0 3 0 2]
+ [0 0 0 0 0 2 3]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch96_val69_train79.pt.
+train avgLoss:  tensor(0.8807, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.280259370803833
+One unit validate time:  0.17623376846313477
+One unit total time:  0.4564931392669678
+epoch 97 : training accuracy 80.000000, testing accuracy 65.714286, time elapsed 62.9156
+no improve epochs:  1 best val accuracy:  68.57142857142857
+train avgLoss:  tensor(0.8426, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2848498821258545
+One unit validate time:  0.17163348197937012
+One unit total time:  0.4564833641052246
+epoch 98 : training accuracy 80.000000, testing accuracy 71.428571, time elapsed 63.3724
+Confusion matrix: test
+[[2 1 1 1 0 0 0]
+ [1 4 0 0 0 0 0]
+ [0 0 5 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [1 0 0 0 2 0 2]
+ [0 0 0 0 0 2 3]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch98_val71_train80.pt.
+train avgLoss:  tensor(0.8630, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28629016876220703
+One unit validate time:  0.16449236869812012
+One unit total time:  0.45078253746032715
+epoch 99 : training accuracy 80.000000, testing accuracy 68.571429, time elapsed 63.8696
+no improve epochs:  1 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8298, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2876899242401123
+One unit validate time:  0.16775059700012207
+One unit total time:  0.4554405212402344
+epoch 100 : training accuracy 82.857140, testing accuracy 71.428571, time elapsed 64.3253
+Confusion matrix: test
+[[2 0 1 1 0 0 1]
+ [1 4 0 0 0 0 0]
+ [0 1 4 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [1 0 0 0 2 0 2]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch100_val71_train83.pt.
+train avgLoss:  tensor(0.8628, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2995309829711914
+One unit validate time:  0.17087388038635254
+One unit total time:  0.47040486335754395
+epoch 101 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 64.8527
+no improve epochs:  1 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8954, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2904164791107178
+One unit validate time:  0.17251896858215332
+One unit total time:  0.4629354476928711
+epoch 102 : training accuracy 70.000000, testing accuracy 71.428571, time elapsed 65.3159
+Confusion matrix: test
+[[2 0 2 1 0 0 0]
+ [1 4 0 0 0 0 0]
+ [0 0 5 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [1 0 0 0 2 0 2]
+ [0 0 0 0 0 2 3]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch102_val71_train70.pt.
+train avgLoss:  tensor(0.9055, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.27880072593688965
+One unit validate time:  0.1715538501739502
+One unit total time:  0.45035457611083984
+epoch 103 : training accuracy 70.000000, testing accuracy 65.714286, time elapsed 65.7900
+no improve epochs:  1 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8492, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28406286239624023
+One unit validate time:  0.1710054874420166
+One unit total time:  0.45506834983825684
+epoch 104 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 66.2453
+no improve epochs:  2 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8855, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2900390625
+One unit validate time:  0.16546368598937988
+One unit total time:  0.4555027484893799
+epoch 105 : training accuracy 70.000008, testing accuracy 71.428571, time elapsed 66.7010
+Confusion matrix: test
+[[2 0 1 1 0 0 1]
+ [1 4 0 0 0 0 0]
+ [0 1 4 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [1 0 0 0 2 0 2]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch105_val71_train70.pt.
+train avgLoss:  tensor(0.8724, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2890815734863281
+One unit validate time:  0.17053794860839844
+One unit total time:  0.45961952209472656
+epoch 106 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 67.2342
+no improve epochs:  1 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8732, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28816843032836914
+One unit validate time:  0.1710820198059082
+One unit total time:  0.45925045013427734
+epoch 107 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 67.6937
+no improve epochs:  2 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9132, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.30037617683410645
+One unit validate time:  0.17009687423706055
+One unit total time:  0.470473051071167
+epoch 108 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 68.1644
+no improve epochs:  3 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8552, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2895474433898926
+One unit validate time:  0.16931533813476562
+One unit total time:  0.4588627815246582
+epoch 109 : training accuracy 78.571426, testing accuracy 71.428571, time elapsed 68.6235
+Confusion matrix: test
+[[2 0 1 2 0 0 0]
+ [0 4 1 0 0 0 0]
+ [0 1 4 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [2 0 0 0 2 0 1]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch109_val71_train79.pt.
+train avgLoss:  tensor(0.8774, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2888166904449463
+One unit validate time:  0.17696356773376465
+One unit total time:  0.46578025817871094
+epoch 110 : training accuracy 75.714287, testing accuracy 65.714286, time elapsed 69.1851
+no improve epochs:  1 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9025, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28632426261901855
+One unit validate time:  0.16881799697875977
+One unit total time:  0.4551422595977783
+epoch 111 : training accuracy 81.428574, testing accuracy 65.714286, time elapsed 69.6404
+no improve epochs:  2 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8697, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28948211669921875
+One unit validate time:  0.1737823486328125
+One unit total time:  0.46326446533203125
+epoch 112 : training accuracy 78.571426, testing accuracy 65.714286, time elapsed 70.1039
+no improve epochs:  3 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8925, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28188014030456543
+One unit validate time:  0.16688179969787598
+One unit total time:  0.4487619400024414
+epoch 113 : training accuracy 77.142860, testing accuracy 65.714286, time elapsed 70.5529
+no improve epochs:  4 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8727, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2866830825805664
+One unit validate time:  0.17280054092407227
+One unit total time:  0.45948362350463867
+epoch 114 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 71.0126
+no improve epochs:  5 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8903, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2878589630126953
+One unit validate time:  0.16953206062316895
+One unit total time:  0.45739102363586426
+epoch 115 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 71.4702
+no improve epochs:  6 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8739, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.294281005859375
+One unit validate time:  0.17481279373168945
+One unit total time:  0.46909379959106445
+epoch 116 : training accuracy 84.285713, testing accuracy 65.714286, time elapsed 71.9396
+no improve epochs:  7 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8666, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2858579158782959
+One unit validate time:  0.1748800277709961
+One unit total time:  0.460737943649292
+epoch 117 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 72.4005
+no improve epochs:  8 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8699, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29180312156677246
+One unit validate time:  0.17257428169250488
+One unit total time:  0.46437740325927734
+epoch 118 : training accuracy 70.000000, testing accuracy 65.714286, time elapsed 72.8651
+no improve epochs:  9 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8368, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28876638412475586
+One unit validate time:  0.17000389099121094
+One unit total time:  0.4587702751159668
+epoch 119 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 73.3241
+no improve epochs:  10 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8824, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2823982238769531
+One unit validate time:  0.17433857917785645
+One unit total time:  0.45673680305480957
+epoch 120 : training accuracy 71.428574, testing accuracy 62.857143, time elapsed 73.7811
+no improve epochs:  11 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8685, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2859988212585449
+One unit validate time:  0.1737971305847168
+One unit total time:  0.4597959518432617
+epoch 121 : training accuracy 72.857140, testing accuracy 71.428571, time elapsed 74.2411
+Confusion matrix: test
+[[2 0 2 1 0 0 0]
+ [0 4 1 0 0 0 0]
+ [0 0 5 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [2 0 0 0 1 0 2]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch121_val71_train73.pt.
+train avgLoss:  tensor(0.8657, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2813568115234375
+One unit validate time:  0.17768168449401855
+One unit total time:  0.45903849601745605
+epoch 122 : training accuracy 82.857140, testing accuracy 65.714286, time elapsed 74.7448
+no improve epochs:  1 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9029, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2832200527191162
+One unit validate time:  0.18586134910583496
+One unit total time:  0.46908140182495117
+epoch 123 : training accuracy 67.142860, testing accuracy 65.714286, time elapsed 75.2141
+no improve epochs:  2 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8943, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29856371879577637
+One unit validate time:  0.1702430248260498
+One unit total time:  0.46880674362182617
+epoch 124 : training accuracy 70.000000, testing accuracy 68.571429, time elapsed 75.6832
+no improve epochs:  3 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8419, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28378772735595703
+One unit validate time:  0.1729569435119629
+One unit total time:  0.4567446708679199
+epoch 125 : training accuracy 77.142868, testing accuracy 62.857143, time elapsed 76.1401
+no improve epochs:  4 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8589, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2865176200866699
+One unit validate time:  0.16589856147766113
+One unit total time:  0.45241618156433105
+epoch 126 : training accuracy 71.428574, testing accuracy 65.714286, time elapsed 76.5928
+no improve epochs:  5 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8701, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28623533248901367
+One unit validate time:  0.17729926109313965
+One unit total time:  0.4635345935821533
+epoch 127 : training accuracy 75.714287, testing accuracy 65.714286, time elapsed 77.0566
+no improve epochs:  6 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8716, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2884702682495117
+One unit validate time:  0.16918015480041504
+One unit total time:  0.45765042304992676
+epoch 128 : training accuracy 80.000000, testing accuracy 62.857143, time elapsed 77.5144
+no improve epochs:  7 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8465, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2807905673980713
+One unit validate time:  0.1702580451965332
+One unit total time:  0.4510486125946045
+epoch 129 : training accuracy 75.714287, testing accuracy 65.714286, time elapsed 77.9657
+no improve epochs:  8 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8899, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29038453102111816
+One unit validate time:  0.16705107688903809
+One unit total time:  0.45743560791015625
+epoch 130 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 78.4234
+no improve epochs:  9 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9496, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.30263257026672363
+One unit validate time:  0.16643357276916504
+One unit total time:  0.46906614303588867
+epoch 131 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 78.8927
+no improve epochs:  10 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8620, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2941117286682129
+One unit validate time:  0.1632862091064453
+One unit total time:  0.4573979377746582
+epoch 132 : training accuracy 81.428574, testing accuracy 62.857143, time elapsed 79.3504
+no improve epochs:  11 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8996, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29787421226501465
+One unit validate time:  0.16897201538085938
+One unit total time:  0.466846227645874
+epoch 133 : training accuracy 71.428574, testing accuracy 68.571429, time elapsed 79.8174
+no improve epochs:  12 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8874, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28440403938293457
+One unit validate time:  0.16600346565246582
+One unit total time:  0.4504075050354004
+epoch 134 : training accuracy 78.571426, testing accuracy 68.571429, time elapsed 80.2681
+no improve epochs:  13 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8673, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29627513885498047
+One unit validate time:  0.16734528541564941
+One unit total time:  0.4636204242706299
+epoch 135 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 80.7319
+no improve epochs:  14 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9318, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28806233406066895
+One unit validate time:  0.16371440887451172
+One unit total time:  0.45177674293518066
+epoch 136 : training accuracy 68.571434, testing accuracy 68.571429, time elapsed 81.1839
+no improve epochs:  15 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8683, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28952527046203613
+One unit validate time:  0.18288755416870117
+One unit total time:  0.4724128246307373
+epoch 137 : training accuracy 72.857140, testing accuracy 65.714286, time elapsed 81.6566
+no improve epochs:  16 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8592, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28644609451293945
+One unit validate time:  0.16456151008605957
+One unit total time:  0.451007604598999
+epoch 138 : training accuracy 72.857140, testing accuracy 68.571429, time elapsed 82.1078
+no improve epochs:  17 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8878, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2887587547302246
+One unit validate time:  0.1757488250732422
+One unit total time:  0.4645075798034668
+epoch 139 : training accuracy 80.000008, testing accuracy 65.714286, time elapsed 82.5726
+no improve epochs:  18 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8885, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28580474853515625
+One unit validate time:  0.17490696907043457
+One unit total time:  0.4607117176055908
+epoch 140 : training accuracy 78.571426, testing accuracy 68.571429, time elapsed 83.0335
+no improve epochs:  19 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8400, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.30927109718322754
+One unit validate time:  0.1624605655670166
+One unit total time:  0.47173166275024414
+epoch 141 : training accuracy 72.857140, testing accuracy 65.714286, time elapsed 83.5055
+no improve epochs:  20 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8601, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28229665756225586
+One unit validate time:  0.18710684776306152
+One unit total time:  0.4694035053253174
+epoch 142 : training accuracy 77.142860, testing accuracy 68.571429, time elapsed 83.9751
+no improve epochs:  21 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8799, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.3008918762207031
+One unit validate time:  0.1650099754333496
+One unit total time:  0.46590185165405273
+epoch 143 : training accuracy 68.571434, testing accuracy 62.857143, time elapsed 84.4412
+no improve epochs:  22 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8516, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2863168716430664
+One unit validate time:  0.17624258995056152
+One unit total time:  0.46255946159362793
+epoch 144 : training accuracy 81.428574, testing accuracy 65.714286, time elapsed 84.9040
+no improve epochs:  23 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9256, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2799105644226074
+One unit validate time:  0.16837477684020996
+One unit total time:  0.4482853412628174
+epoch 145 : training accuracy 72.857140, testing accuracy 62.857143, time elapsed 85.3525
+no improve epochs:  24 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8697, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2937800884246826
+One unit validate time:  0.16485261917114258
+One unit total time:  0.4586327075958252
+epoch 146 : training accuracy 85.714287, testing accuracy 60.000000, time elapsed 85.8114
+no improve epochs:  25 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8547, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2898986339569092
+One unit validate time:  0.16064858436584473
+One unit total time:  0.4505472183227539
+epoch 147 : training accuracy 81.428574, testing accuracy 60.000000, time elapsed 86.2621
+no improve epochs:  26 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8801, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28375720977783203
+One unit validate time:  0.17844820022583008
+One unit total time:  0.4622054100036621
+epoch 148 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 86.7246
+no improve epochs:  27 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9371, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.27684831619262695
+One unit validate time:  0.17711901664733887
+One unit total time:  0.4539673328399658
+epoch 149 : training accuracy 72.857140, testing accuracy 71.428571, time elapsed 87.1788
+Confusion matrix: test
+[[1 0 3 1 0 0 0]
+ [0 4 1 0 0 0 0]
+ [0 0 5 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [2 0 0 0 2 0 1]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch149_val71_train73.pt.
+train avgLoss:  tensor(0.9052, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2980000972747803
+One unit validate time:  0.17023801803588867
+One unit total time:  0.46823811531066895
+epoch 150 : training accuracy 72.857140, testing accuracy 65.714286, time elapsed 87.6708
+no improve epochs:  1 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9251, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.30274415016174316
+One unit validate time:  0.16881561279296875
+One unit total time:  0.4715597629547119
+epoch 151 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 88.1426
+no improve epochs:  2 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8806, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2875337600708008
+One unit validate time:  0.1720874309539795
+One unit total time:  0.4596211910247803
+epoch 152 : training accuracy 72.857140, testing accuracy 68.571429, time elapsed 88.6024
+no improve epochs:  3 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8523, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2881770133972168
+One unit validate time:  0.18397784233093262
+One unit total time:  0.4721548557281494
+epoch 153 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 89.0748
+no improve epochs:  4 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9019, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2873547077178955
+One unit validate time:  0.17250370979309082
+One unit total time:  0.45985841751098633
+epoch 154 : training accuracy 75.714287, testing accuracy 65.714286, time elapsed 89.5349
+no improve epochs:  5 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8855, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2810342311859131
+One unit validate time:  0.16523957252502441
+One unit total time:  0.4462738037109375
+epoch 155 : training accuracy 71.428574, testing accuracy 62.857143, time elapsed 89.9814
+no improve epochs:  6 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8379, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2914698123931885
+One unit validate time:  0.16999053955078125
+One unit total time:  0.4614603519439697
+epoch 156 : training accuracy 78.571426, testing accuracy 60.000000, time elapsed 90.4431
+no improve epochs:  7 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8779, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28920769691467285
+One unit validate time:  0.16803598403930664
+One unit total time:  0.4572436809539795
+epoch 157 : training accuracy 78.571426, testing accuracy 65.714286, time elapsed 90.9006
+no improve epochs:  8 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9153, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.3044106960296631
+One unit validate time:  0.1719217300415039
+One unit total time:  0.476332426071167
+epoch 158 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 91.3771
+no improve epochs:  9 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8552, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2956373691558838
+One unit validate time:  0.16992831230163574
+One unit total time:  0.46556568145751953
+epoch 159 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 91.8429
+no improve epochs:  10 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8724, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2932400703430176
+One unit validate time:  0.1687605381011963
+One unit total time:  0.46200060844421387
+epoch 160 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 92.3052
+no improve epochs:  11 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8469, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2962641716003418
+One unit validate time:  0.17602133750915527
+One unit total time:  0.47228550910949707
+epoch 161 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 92.7777
+no improve epochs:  12 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8454, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28345203399658203
+One unit validate time:  0.16675114631652832
+One unit total time:  0.45020318031311035
+epoch 162 : training accuracy 84.285713, testing accuracy 62.857143, time elapsed 93.2281
+no improve epochs:  13 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9258, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28230738639831543
+One unit validate time:  0.17288565635681152
+One unit total time:  0.45519304275512695
+epoch 163 : training accuracy 71.428574, testing accuracy 62.857143, time elapsed 93.6836
+no improve epochs:  14 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8564, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28938722610473633
+One unit validate time:  0.1732182502746582
+One unit total time:  0.46260547637939453
+epoch 164 : training accuracy 75.714287, testing accuracy 65.714286, time elapsed 94.1464
+no improve epochs:  15 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9059, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2855815887451172
+One unit validate time:  0.1768805980682373
+One unit total time:  0.4624621868133545
+epoch 165 : training accuracy 70.000000, testing accuracy 62.857143, time elapsed 94.6091
+no improve epochs:  16 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8614, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2825033664703369
+One unit validate time:  0.1671888828277588
+One unit total time:  0.4496922492980957
+epoch 166 : training accuracy 77.142860, testing accuracy 68.571429, time elapsed 95.0590
+no improve epochs:  17 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8458, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28552722930908203
+One unit validate time:  0.1613607406616211
+One unit total time:  0.4468879699707031
+epoch 167 : training accuracy 72.857140, testing accuracy 65.714286, time elapsed 95.5061
+no improve epochs:  18 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8623, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2798583507537842
+One unit validate time:  0.16632986068725586
+One unit total time:  0.44618821144104004
+epoch 168 : training accuracy 72.857140, testing accuracy 68.571429, time elapsed 95.9525
+no improve epochs:  19 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8665, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2906789779663086
+One unit validate time:  0.1709153652191162
+One unit total time:  0.4615943431854248
+epoch 169 : training accuracy 77.142860, testing accuracy 60.000000, time elapsed 96.4143
+no improve epochs:  20 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9028, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29177236557006836
+One unit validate time:  0.1752784252166748
+One unit total time:  0.46705079078674316
+epoch 170 : training accuracy 72.857140, testing accuracy 65.714286, time elapsed 96.8816
+no improve epochs:  21 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8326, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.27802395820617676
+One unit validate time:  0.16685271263122559
+One unit total time:  0.44487667083740234
+epoch 171 : training accuracy 80.000000, testing accuracy 62.857143, time elapsed 97.3267
+no improve epochs:  22 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8561, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2856717109680176
+One unit validate time:  0.16970348358154297
+One unit total time:  0.45537519454956055
+epoch 172 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 97.7823
+no improve epochs:  23 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8792, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2868382930755615
+One unit validate time:  0.17074131965637207
+One unit total time:  0.4575796127319336
+epoch 173 : training accuracy 78.571426, testing accuracy 65.714286, time elapsed 98.2401
+no improve epochs:  24 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8649, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2818326950073242
+One unit validate time:  0.16515278816223145
+One unit total time:  0.44698548316955566
+epoch 174 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 98.6873
+no improve epochs:  25 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8561, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29110288619995117
+One unit validate time:  0.1790757179260254
+One unit total time:  0.47017860412597656
+epoch 175 : training accuracy 75.714287, testing accuracy 71.428571, time elapsed 99.1577
+Confusion matrix: test
+[[1 0 2 1 0 0 1]
+ [0 4 1 0 0 0 0]
+ [0 0 5 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [2 0 0 0 2 0 1]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch175_val71_train76.pt.
+train avgLoss:  tensor(0.8587, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28934454917907715
+One unit validate time:  0.17842531204223633
+One unit total time:  0.4677698612213135
+epoch 176 : training accuracy 78.571426, testing accuracy 62.857143, time elapsed 99.7258
+no improve epochs:  1 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8691, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28488922119140625
+One unit validate time:  0.17705368995666504
+One unit total time:  0.4619429111480713
+epoch 177 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 100.1880
+no improve epochs:  2 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8762, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2803914546966553
+One unit validate time:  0.17202544212341309
+One unit total time:  0.45241689682006836
+epoch 178 : training accuracy 77.142860, testing accuracy 68.571429, time elapsed 100.6406
+no improve epochs:  3 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8386, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29186058044433594
+One unit validate time:  0.17053818702697754
+One unit total time:  0.4623987674713135
+epoch 179 : training accuracy 81.428574, testing accuracy 62.857143, time elapsed 101.1033
+no improve epochs:  4 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8769, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.3003990650177002
+One unit validate time:  0.1742231845855713
+One unit total time:  0.4746222496032715
+epoch 180 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 101.5781
+no improve epochs:  5 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8465, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.30109381675720215
+One unit validate time:  0.1698284149169922
+One unit total time:  0.47092223167419434
+epoch 181 : training accuracy 80.000008, testing accuracy 62.857143, time elapsed 102.0493
+no improve epochs:  6 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8901, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2836270332336426
+One unit validate time:  0.172196626663208
+One unit total time:  0.4558236598968506
+epoch 182 : training accuracy 75.714287, testing accuracy 68.571429, time elapsed 102.5053
+no improve epochs:  7 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8684, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2814960479736328
+One unit validate time:  0.18371176719665527
+One unit total time:  0.4652078151702881
+epoch 183 : training accuracy 80.000008, testing accuracy 65.714286, time elapsed 102.9707
+no improve epochs:  8 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8829, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2883918285369873
+One unit validate time:  0.1669292449951172
+One unit total time:  0.4553210735321045
+epoch 184 : training accuracy 72.857140, testing accuracy 65.714286, time elapsed 103.4263
+no improve epochs:  9 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8902, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28777503967285156
+One unit validate time:  0.17600178718566895
+One unit total time:  0.4637768268585205
+epoch 185 : training accuracy 68.571434, testing accuracy 62.857143, time elapsed 103.8903
+no improve epochs:  10 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8309, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29602670669555664
+One unit validate time:  0.16921472549438477
+One unit total time:  0.4652414321899414
+epoch 186 : training accuracy 74.285713, testing accuracy 71.428571, time elapsed 104.3558
+Confusion matrix: test
+[[1 0 2 1 0 0 1]
+ [0 4 1 0 0 0 0]
+ [0 0 5 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [2 0 0 0 2 0 1]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch186_val71_train74.pt.
+train avgLoss:  tensor(0.8485, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29277706146240234
+One unit validate time:  0.1683042049407959
+One unit total time:  0.46108126640319824
+epoch 187 : training accuracy 75.714287, testing accuracy 68.571429, time elapsed 104.8384
+no improve epochs:  1 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8767, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2912135124206543
+One unit validate time:  0.171738862991333
+One unit total time:  0.4629523754119873
+epoch 188 : training accuracy 72.857147, testing accuracy 65.714286, time elapsed 105.3015
+no improve epochs:  2 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8557, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2881009578704834
+One unit validate time:  0.16388416290283203
+One unit total time:  0.45198512077331543
+epoch 189 : training accuracy 77.142860, testing accuracy 65.714286, time elapsed 105.7538
+no improve epochs:  3 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8506, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2804112434387207
+One unit validate time:  0.17826509475708008
+One unit total time:  0.4586763381958008
+epoch 190 : training accuracy 78.571426, testing accuracy 62.857143, time elapsed 106.2127
+no improve epochs:  4 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8874, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2829020023345947
+One unit validate time:  0.17855310440063477
+One unit total time:  0.4614551067352295
+epoch 191 : training accuracy 75.714287, testing accuracy 65.714286, time elapsed 106.6744
+no improve epochs:  5 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8343, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2828671932220459
+One unit validate time:  0.1806802749633789
+One unit total time:  0.4635474681854248
+epoch 192 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 107.1381
+no improve epochs:  6 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8815, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2920238971710205
+One unit validate time:  0.1774587631225586
+One unit total time:  0.4694826602935791
+epoch 193 : training accuracy 70.000000, testing accuracy 68.571429, time elapsed 107.6079
+no improve epochs:  7 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8527, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28542399406433105
+One unit validate time:  0.18154692649841309
+One unit total time:  0.46697092056274414
+epoch 194 : training accuracy 78.571426, testing accuracy 65.714286, time elapsed 108.0751
+no improve epochs:  8 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8872, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.30233120918273926
+One unit validate time:  0.1744227409362793
+One unit total time:  0.47675395011901855
+epoch 195 : training accuracy 77.142860, testing accuracy 71.428571, time elapsed 108.5520
+Confusion matrix: test
+[[1 0 2 2 0 0 0]
+ [0 4 1 0 0 0 0]
+ [0 0 5 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [2 0 0 0 2 0 1]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch195_val71_train77.pt.
+train avgLoss:  tensor(0.8459, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28967952728271484
+One unit validate time:  0.17650079727172852
+One unit total time:  0.46618032455444336
+epoch 196 : training accuracy 77.142860, testing accuracy 65.714286, time elapsed 109.0993
+no improve epochs:  1 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9768, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2834961414337158
+One unit validate time:  0.18298077583312988
+One unit total time:  0.4664769172668457
+epoch 197 : training accuracy 72.857140, testing accuracy 62.857143, time elapsed 109.5661
+no improve epochs:  2 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8715, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.3009648323059082
+One unit validate time:  0.17172622680664062
+One unit total time:  0.47269105911254883
+epoch 198 : training accuracy 75.714287, testing accuracy 68.571429, time elapsed 110.0390
+no improve epochs:  3 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8724, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28292298316955566
+One unit validate time:  0.16512680053710938
+One unit total time:  0.44804978370666504
+epoch 199 : training accuracy 74.285713, testing accuracy 60.000000, time elapsed 110.4873
+no improve epochs:  4 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8588, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2941117286682129
+One unit validate time:  0.16416573524475098
+One unit total time:  0.45827746391296387
+epoch 200 : training accuracy 74.285713, testing accuracy 60.000000, time elapsed 110.9458
+no improve epochs:  5 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8791, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29036498069763184
+One unit validate time:  0.1818387508392334
+One unit total time:  0.47220373153686523
+epoch 201 : training accuracy 71.428574, testing accuracy 62.857143, time elapsed 111.4182
+no improve epochs:  6 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8611, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.27977800369262695
+One unit validate time:  0.18007731437683105
+One unit total time:  0.459855318069458
+epoch 202 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 111.8783
+no improve epochs:  7 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8450, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28578710556030273
+One unit validate time:  0.17048859596252441
+One unit total time:  0.45627570152282715
+epoch 203 : training accuracy 81.428574, testing accuracy 65.714286, time elapsed 112.3348
+no improve epochs:  8 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8472, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2818472385406494
+One unit validate time:  0.16924333572387695
+One unit total time:  0.45109057426452637
+epoch 204 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 112.7862
+no improve epochs:  9 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8965, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2924489974975586
+One unit validate time:  0.16866445541381836
+One unit total time:  0.46111345291137695
+epoch 205 : training accuracy 81.428574, testing accuracy 68.571429, time elapsed 113.2475
+no improve epochs:  10 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8744, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28612279891967773
+One unit validate time:  0.17210769653320312
+One unit total time:  0.45823049545288086
+epoch 206 : training accuracy 81.428574, testing accuracy 65.714286, time elapsed 113.7060
+no improve epochs:  11 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8473, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2908601760864258
+One unit validate time:  0.1724550724029541
+One unit total time:  0.4633152484893799
+epoch 207 : training accuracy 80.000000, testing accuracy 65.714286, time elapsed 114.1695
+no improve epochs:  12 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8586, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28153085708618164
+One unit validate time:  0.1717064380645752
+One unit total time:  0.45323729515075684
+epoch 208 : training accuracy 78.571426, testing accuracy 68.571429, time elapsed 114.6230
+no improve epochs:  13 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8644, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28956103324890137
+One unit validate time:  0.16587519645690918
+One unit total time:  0.45543622970581055
+epoch 209 : training accuracy 78.571426, testing accuracy 65.714286, time elapsed 115.0787
+no improve epochs:  14 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8618, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29566478729248047
+One unit validate time:  0.16849660873413086
+One unit total time:  0.46416139602661133
+epoch 210 : training accuracy 75.714287, testing accuracy 65.714286, time elapsed 115.5431
+no improve epochs:  15 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8963, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2837107181549072
+One unit validate time:  0.16742920875549316
+One unit total time:  0.4511399269104004
+epoch 211 : training accuracy 59.999996, testing accuracy 68.571429, time elapsed 115.9944
+no improve epochs:  16 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8593, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2816648483276367
+One unit validate time:  0.17494893074035645
+One unit total time:  0.45661377906799316
+epoch 212 : training accuracy 77.142860, testing accuracy 65.714286, time elapsed 116.4513
+no improve epochs:  17 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9033, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.296006441116333
+One unit validate time:  0.1736311912536621
+One unit total time:  0.4696376323699951
+epoch 213 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 116.9211
+no improve epochs:  18 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8527, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28737401962280273
+One unit validate time:  0.18012309074401855
+One unit total time:  0.4674971103668213
+epoch 214 : training accuracy 68.571434, testing accuracy 62.857143, time elapsed 117.3888
+no improve epochs:  19 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8957, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2907099723815918
+One unit validate time:  0.1702594757080078
+One unit total time:  0.4609694480895996
+epoch 215 : training accuracy 80.000008, testing accuracy 62.857143, time elapsed 117.8501
+no improve epochs:  20 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8605, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29376721382141113
+One unit validate time:  0.16632580757141113
+One unit total time:  0.46009302139282227
+epoch 216 : training accuracy 81.428574, testing accuracy 65.714286, time elapsed 118.3104
+no improve epochs:  21 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9031, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2925539016723633
+One unit validate time:  0.16997885704040527
+One unit total time:  0.46253275871276855
+epoch 217 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 118.7731
+no improve epochs:  22 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8982, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.286454439163208
+One unit validate time:  0.1660315990447998
+One unit total time:  0.4524860382080078
+epoch 218 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 119.2259
+no improve epochs:  23 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8424, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28936195373535156
+One unit validate time:  0.16651034355163574
+One unit total time:  0.4558722972869873
+epoch 219 : training accuracy 81.428574, testing accuracy 65.714286, time elapsed 119.6820
+no improve epochs:  24 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8516, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2812690734863281
+One unit validate time:  0.1856393814086914
+One unit total time:  0.46690845489501953
+epoch 220 : training accuracy 75.714287, testing accuracy 65.714286, time elapsed 120.1491
+no improve epochs:  25 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8846, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28029465675354004
+One unit validate time:  0.17142772674560547
+One unit total time:  0.4517223834991455
+epoch 221 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 120.6011
+no improve epochs:  26 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8665, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2884798049926758
+One unit validate time:  0.1730639934539795
+One unit total time:  0.4615437984466553
+epoch 222 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 121.0629
+no improve epochs:  27 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9223, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2883129119873047
+One unit validate time:  0.1704394817352295
+One unit total time:  0.4587523937225342
+epoch 223 : training accuracy 71.428581, testing accuracy 65.714286, time elapsed 121.5219
+no improve epochs:  28 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8509, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.281691312789917
+One unit validate time:  0.17451190948486328
+One unit total time:  0.4562032222747803
+epoch 224 : training accuracy 71.428574, testing accuracy 65.714286, time elapsed 121.9783
+no improve epochs:  29 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9276, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28881239891052246
+One unit validate time:  0.1745920181274414
+One unit total time:  0.46340441703796387
+epoch 225 : training accuracy 72.857140, testing accuracy 65.714286, time elapsed 122.4419
+no improve epochs:  30 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9262, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2889719009399414
+One unit validate time:  0.16819119453430176
+One unit total time:  0.45716309547424316
+epoch 226 : training accuracy 72.857147, testing accuracy 68.571429, time elapsed 122.8993
+no improve epochs:  31 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8786, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.283919095993042
+One unit validate time:  0.1849985122680664
+One unit total time:  0.4689176082611084
+epoch 227 : training accuracy 81.428574, testing accuracy 65.714286, time elapsed 123.3685
+no improve epochs:  32 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8447, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.27933573722839355
+One unit validate time:  0.17726778984069824
+One unit total time:  0.4566035270690918
+epoch 228 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 123.8253
+no improve epochs:  33 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8569, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2980458736419678
+One unit validate time:  0.16764116287231445
+One unit total time:  0.4656870365142822
+epoch 229 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 124.2912
+no improve epochs:  34 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8341, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2985556125640869
+One unit validate time:  0.16689419746398926
+One unit total time:  0.46544981002807617
+epoch 230 : training accuracy 75.714287, testing accuracy 62.857143, time elapsed 124.7569
+no improve epochs:  35 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8865, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2883334159851074
+One unit validate time:  0.17976737022399902
+One unit total time:  0.46810078620910645
+epoch 231 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 125.2252
+no improve epochs:  36 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8348, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2813119888305664
+One unit validate time:  0.17338275909423828
+One unit total time:  0.4546947479248047
+epoch 232 : training accuracy 80.000000, testing accuracy 65.714286, time elapsed 125.6802
+no improve epochs:  37 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.9045, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.27736759185791016
+One unit validate time:  0.17214536666870117
+One unit total time:  0.44951295852661133
+epoch 233 : training accuracy 72.857140, testing accuracy 68.571429, time elapsed 126.1299
+no improve epochs:  38 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8359, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.279512882232666
+One unit validate time:  0.17388057708740234
+One unit total time:  0.45339345932006836
+epoch 234 : training accuracy 78.571426, testing accuracy 62.857143, time elapsed 126.5835
+no improve epochs:  39 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8822, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2789318561553955
+One unit validate time:  0.18049001693725586
+One unit total time:  0.45942187309265137
+epoch 235 : training accuracy 78.571434, testing accuracy 62.857143, time elapsed 127.0432
+no improve epochs:  40 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8462, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28694581985473633
+One unit validate time:  0.1687946319580078
+One unit total time:  0.45574045181274414
+epoch 236 : training accuracy 80.000008, testing accuracy 65.714286, time elapsed 127.4991
+no improve epochs:  41 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8458, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28185081481933594
+One unit validate time:  0.17123961448669434
+One unit total time:  0.4530904293060303
+epoch 237 : training accuracy 82.857140, testing accuracy 62.857143, time elapsed 127.9525
+no improve epochs:  42 best val accuracy:  71.42857142857143
+train avgLoss:  tensor(0.8478, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2969331741333008
+One unit validate time:  0.16544842720031738
+One unit total time:  0.46238160133361816
+epoch 238 : training accuracy 75.714287, testing accuracy 74.285714, time elapsed 128.4151
+Confusion matrix: test
+[[2 0 2 1 0 0 0]
+ [0 4 1 0 0 0 0]
+ [0 0 5 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [2 0 0 0 2 0 1]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch238_val74_train76.pt.
+train avgLoss:  tensor(0.8873, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29188966751098633
+One unit validate time:  0.1696333885192871
+One unit total time:  0.46152305603027344
+epoch 239 : training accuracy 80.000000, testing accuracy 62.857143, time elapsed 128.9120
+no improve epochs:  1 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8436, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2834360599517822
+One unit validate time:  0.16796636581420898
+One unit total time:  0.4514024257659912
+epoch 240 : training accuracy 72.857147, testing accuracy 62.857143, time elapsed 129.3636
+no improve epochs:  2 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8508, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2952558994293213
+One unit validate time:  0.1664896011352539
+One unit total time:  0.4617455005645752
+epoch 241 : training accuracy 78.571434, testing accuracy 68.571429, time elapsed 129.8256
+no improve epochs:  3 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8210, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28044581413269043
+One unit validate time:  0.1673412322998047
+One unit total time:  0.4477870464324951
+epoch 242 : training accuracy 80.000000, testing accuracy 65.714286, time elapsed 130.2736
+no improve epochs:  4 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.9150, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2869873046875
+One unit validate time:  0.16937470436096191
+One unit total time:  0.4563620090484619
+epoch 243 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 130.7302
+no improve epochs:  5 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8518, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2923896312713623
+One unit validate time:  0.17711949348449707
+One unit total time:  0.4695091247558594
+epoch 244 : training accuracy 82.857140, testing accuracy 65.714286, time elapsed 131.1999
+no improve epochs:  6 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8763, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.30267786979675293
+One unit validate time:  0.17534804344177246
+One unit total time:  0.4780259132385254
+epoch 245 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 131.6782
+no improve epochs:  7 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8513, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2880892753601074
+One unit validate time:  0.16544342041015625
+One unit total time:  0.45353269577026367
+epoch 246 : training accuracy 78.571426, testing accuracy 62.857143, time elapsed 132.1320
+no improve epochs:  8 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8668, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28685998916625977
+One unit validate time:  0.1778242588043213
+One unit total time:  0.46468424797058105
+epoch 247 : training accuracy 75.714287, testing accuracy 62.857143, time elapsed 132.5969
+no improve epochs:  9 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8737, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2838170528411865
+One unit validate time:  0.1725482940673828
+One unit total time:  0.45636534690856934
+epoch 248 : training accuracy 82.857140, testing accuracy 60.000000, time elapsed 133.0535
+no improve epochs:  10 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8256, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2912623882293701
+One unit validate time:  0.16531896591186523
+One unit total time:  0.45658135414123535
+epoch 249 : training accuracy 85.714287, testing accuracy 62.857143, time elapsed 133.5103
+no improve epochs:  11 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8582, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2888948917388916
+One unit validate time:  0.17937994003295898
+One unit total time:  0.4682748317718506
+epoch 250 : training accuracy 71.428574, testing accuracy 68.571429, time elapsed 133.9788
+no improve epochs:  12 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8980, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29344606399536133
+One unit validate time:  0.16905498504638672
+One unit total time:  0.46250104904174805
+epoch 251 : training accuracy 67.142860, testing accuracy 65.714286, time elapsed 134.4415
+no improve epochs:  13 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8606, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.30247950553894043
+One unit validate time:  0.17437267303466797
+One unit total time:  0.4768521785736084
+epoch 252 : training accuracy 75.714287, testing accuracy 68.571429, time elapsed 134.9186
+no improve epochs:  14 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8509, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.279097318649292
+One unit validate time:  0.17283964157104492
+One unit total time:  0.4519369602203369
+epoch 253 : training accuracy 75.714287, testing accuracy 74.285714, time elapsed 135.3708
+Confusion matrix: test
+[[2 0 1 1 0 1 0]
+ [0 4 1 0 0 0 0]
+ [0 0 5 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [2 0 0 0 2 0 1]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch253_val74_train76.pt.
+train avgLoss:  tensor(0.9133, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.30257177352905273
+One unit validate time:  0.15826201438903809
+One unit total time:  0.4608337879180908
+epoch 254 : training accuracy 71.428574, testing accuracy 68.571429, time elapsed 135.8781
+no improve epochs:  1 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8452, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2912776470184326
+One unit validate time:  0.16768360137939453
+One unit total time:  0.45896124839782715
+epoch 255 : training accuracy 78.571426, testing accuracy 68.571429, time elapsed 136.3373
+no improve epochs:  2 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8490, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2865583896636963
+One unit validate time:  0.17470812797546387
+One unit total time:  0.46126651763916016
+epoch 256 : training accuracy 81.428574, testing accuracy 68.571429, time elapsed 136.7988
+no improve epochs:  3 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8517, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2793111801147461
+One unit validate time:  0.1655740737915039
+One unit total time:  0.44488525390625
+epoch 257 : training accuracy 75.714287, testing accuracy 68.571429, time elapsed 137.2439
+no improve epochs:  4 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8928, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.27769947052001953
+One unit validate time:  0.16755270957946777
+One unit total time:  0.4452521800994873
+epoch 258 : training accuracy 78.571426, testing accuracy 68.571429, time elapsed 137.6894
+no improve epochs:  5 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8635, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29059863090515137
+One unit validate time:  0.18650484085083008
+One unit total time:  0.47710347175598145
+epoch 259 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 138.1667
+no improve epochs:  6 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8515, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2871437072753906
+One unit validate time:  0.1823587417602539
+One unit total time:  0.46950244903564453
+epoch 260 : training accuracy 80.000000, testing accuracy 62.857143, time elapsed 138.6365
+no improve epochs:  7 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8311, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2871708869934082
+One unit validate time:  0.17481184005737305
+One unit total time:  0.46198272705078125
+epoch 261 : training accuracy 78.571426, testing accuracy 68.571429, time elapsed 139.0987
+no improve epochs:  8 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8673, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.3007016181945801
+One unit validate time:  0.17075157165527344
+One unit total time:  0.4714531898498535
+epoch 262 : training accuracy 75.714287, testing accuracy 60.000000, time elapsed 139.5704
+no improve epochs:  9 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.9313, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.3057689666748047
+One unit validate time:  0.16622114181518555
+One unit total time:  0.47199010848999023
+epoch 263 : training accuracy 68.571434, testing accuracy 71.428571, time elapsed 140.0426
+no improve epochs:  10 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8697, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2842981815338135
+One unit validate time:  0.17032098770141602
+One unit total time:  0.4546191692352295
+epoch 264 : training accuracy 77.142868, testing accuracy 60.000000, time elapsed 140.4974
+no improve epochs:  11 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8735, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.294513463973999
+One unit validate time:  0.17311739921569824
+One unit total time:  0.46763086318969727
+epoch 265 : training accuracy 81.428574, testing accuracy 68.571429, time elapsed 140.9653
+no improve epochs:  12 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8573, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28809642791748047
+One unit validate time:  0.16721606254577637
+One unit total time:  0.45531249046325684
+epoch 266 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 141.4208
+no improve epochs:  13 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8619, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29201698303222656
+One unit validate time:  0.18515682220458984
+One unit total time:  0.4771738052368164
+epoch 267 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 141.8983
+no improve epochs:  14 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8883, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2894155979156494
+One unit validate time:  0.17653703689575195
+One unit total time:  0.46595263481140137
+epoch 268 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 142.3645
+no improve epochs:  15 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8466, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28072667121887207
+One unit validate time:  0.1672806739807129
+One unit total time:  0.44800734519958496
+epoch 269 : training accuracy 82.857140, testing accuracy 65.714286, time elapsed 142.8127
+no improve epochs:  16 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8594, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2900512218475342
+One unit validate time:  0.19486522674560547
+One unit total time:  0.48491644859313965
+epoch 270 : training accuracy 75.714287, testing accuracy 62.857143, time elapsed 143.2979
+no improve epochs:  17 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.9180, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.30246663093566895
+One unit validate time:  0.16881966590881348
+One unit total time:  0.4712862968444824
+epoch 271 : training accuracy 72.857140, testing accuracy 62.857143, time elapsed 143.7694
+no improve epochs:  18 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.9067, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2999916076660156
+One unit validate time:  0.1748032569885254
+One unit total time:  0.474794864654541
+epoch 272 : training accuracy 72.857147, testing accuracy 65.714286, time elapsed 144.2444
+no improve epochs:  19 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8610, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2838118076324463
+One unit validate time:  0.1647791862487793
+One unit total time:  0.4485909938812256
+epoch 273 : training accuracy 80.000008, testing accuracy 68.571429, time elapsed 144.6932
+no improve epochs:  20 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8525, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28220510482788086
+One unit validate time:  0.17016983032226562
+One unit total time:  0.4523749351501465
+epoch 274 : training accuracy 81.428574, testing accuracy 62.857143, time elapsed 145.1459
+no improve epochs:  21 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8376, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2906312942504883
+One unit validate time:  0.16723227500915527
+One unit total time:  0.45786356925964355
+epoch 275 : training accuracy 77.142860, testing accuracy 68.571429, time elapsed 145.6040
+no improve epochs:  22 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8473, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2856457233428955
+One unit validate time:  0.16860365867614746
+One unit total time:  0.45424938201904297
+epoch 276 : training accuracy 82.857140, testing accuracy 65.714286, time elapsed 146.0584
+no improve epochs:  23 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8301, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2814326286315918
+One unit validate time:  0.17115473747253418
+One unit total time:  0.452587366104126
+epoch 277 : training accuracy 81.428574, testing accuracy 68.571429, time elapsed 146.5112
+no improve epochs:  24 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8889, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2988243103027344
+One unit validate time:  0.1649789810180664
+One unit total time:  0.4638032913208008
+epoch 278 : training accuracy 71.428574, testing accuracy 62.857143, time elapsed 146.9753
+no improve epochs:  25 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8768, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29532957077026367
+One unit validate time:  0.16959595680236816
+One unit total time:  0.46492552757263184
+epoch 279 : training accuracy 72.857147, testing accuracy 65.714286, time elapsed 147.4404
+no improve epochs:  26 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.9085, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.27905893325805664
+One unit validate time:  0.17649507522583008
+One unit total time:  0.4555540084838867
+epoch 280 : training accuracy 71.428574, testing accuracy 65.714286, time elapsed 147.8962
+no improve epochs:  27 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8476, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2857065200805664
+One unit validate time:  0.17412471771240234
+One unit total time:  0.45983123779296875
+epoch 281 : training accuracy 81.428574, testing accuracy 68.571429, time elapsed 148.3563
+no improve epochs:  28 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8700, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2851748466491699
+One unit validate time:  0.17251038551330566
+One unit total time:  0.4576852321624756
+epoch 282 : training accuracy 71.428574, testing accuracy 68.571429, time elapsed 148.8142
+no improve epochs:  29 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8317, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2928807735443115
+One unit validate time:  0.16058754920959473
+One unit total time:  0.45346832275390625
+epoch 283 : training accuracy 78.571426, testing accuracy 65.714286, time elapsed 149.2679
+no improve epochs:  30 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8232, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2790205478668213
+One unit validate time:  0.17064642906188965
+One unit total time:  0.44966697692871094
+epoch 284 : training accuracy 77.142845, testing accuracy 62.857143, time elapsed 149.7178
+no improve epochs:  31 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8666, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28171300888061523
+One unit validate time:  0.16981244087219238
+One unit total time:  0.4515254497528076
+epoch 285 : training accuracy 77.142868, testing accuracy 65.714286, time elapsed 150.1696
+no improve epochs:  32 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8557, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.3055849075317383
+One unit validate time:  0.16106700897216797
+One unit total time:  0.46665191650390625
+epoch 286 : training accuracy 82.857140, testing accuracy 65.714286, time elapsed 150.6365
+no improve epochs:  33 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8422, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2844080924987793
+One unit validate time:  0.17904376983642578
+One unit total time:  0.4634518623352051
+epoch 287 : training accuracy 81.428574, testing accuracy 71.428571, time elapsed 151.1001
+no improve epochs:  34 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8770, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2872915267944336
+One unit validate time:  0.1691300868988037
+One unit total time:  0.4564216136932373
+epoch 288 : training accuracy 71.428574, testing accuracy 62.857143, time elapsed 151.5568
+no improve epochs:  35 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8332, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2791414260864258
+One unit validate time:  0.16644835472106934
+One unit total time:  0.4455897808074951
+epoch 289 : training accuracy 75.714287, testing accuracy 62.857143, time elapsed 152.0026
+no improve epochs:  36 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8507, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2846837043762207
+One unit validate time:  0.1756901741027832
+One unit total time:  0.4603738784790039
+epoch 290 : training accuracy 80.000000, testing accuracy 65.714286, time elapsed 152.4632
+no improve epochs:  37 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8189, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2836642265319824
+One unit validate time:  0.187516450881958
+One unit total time:  0.47118067741394043
+epoch 291 : training accuracy 78.571434, testing accuracy 68.571429, time elapsed 152.9346
+no improve epochs:  38 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8823, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2825047969818115
+One unit validate time:  0.1640310287475586
+One unit total time:  0.4465358257293701
+epoch 292 : training accuracy 72.857140, testing accuracy 65.714286, time elapsed 153.3814
+no improve epochs:  39 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.9027, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29788780212402344
+One unit validate time:  0.16965436935424805
+One unit total time:  0.4675421714782715
+epoch 293 : training accuracy 75.714287, testing accuracy 65.714286, time elapsed 153.8492
+no improve epochs:  40 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8705, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2879312038421631
+One unit validate time:  0.16633939743041992
+One unit total time:  0.454270601272583
+epoch 294 : training accuracy 80.000008, testing accuracy 62.857143, time elapsed 154.3037
+no improve epochs:  41 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8758, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28790998458862305
+One unit validate time:  0.17745184898376465
+One unit total time:  0.4653618335723877
+epoch 295 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 154.7693
+no improve epochs:  42 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8925, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29366493225097656
+One unit validate time:  0.17975926399230957
+One unit total time:  0.47342419624328613
+epoch 296 : training accuracy 78.571426, testing accuracy 62.857143, time elapsed 155.2430
+no improve epochs:  43 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8878, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.28540563583374023
+One unit validate time:  0.1738595962524414
+One unit total time:  0.45926523208618164
+epoch 297 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 155.7025
+no improve epochs:  44 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.8413, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.29852771759033203
+One unit validate time:  0.18136096000671387
+One unit total time:  0.4798886775970459
+epoch 298 : training accuracy 82.857140, testing accuracy 68.571429, time elapsed 156.1826
+no improve epochs:  45 best val accuracy:  74.28571428571429
+train avgLoss:  tensor(0.9037, device='cuda:0', grad_fn=<DivBackward0>)
+One unit train time:  0.2860391139984131
+One unit validate time:  0.1661369800567627
+One unit total time:  0.4521760940551758
+epoch 299 : training accuracy 72.857140, testing accuracy 68.571429, time elapsed 156.6350
+no improve epochs:  46 best val accuracy:  74.28571428571429

@@ -1,0 +1,18 @@
+{
+  "Outputs" : {
+    "classLabel" : {
+      "MLFeatureShortDescription" : "Most likely hand gesture category."
+    },
+    "confidences" : {
+      "MLFeatureShortDescription" : "--"
+    }
+  },
+  "Inputs" : {
+    "poses" : {
+      "MLFeatureShortDescription" : "Input hand poses to be classified."
+    }
+  },
+  "TrainingInputs" : {
+
+  }
+}

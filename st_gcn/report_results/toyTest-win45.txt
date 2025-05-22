@@ -1,0 +1,783 @@
+2025-04-05 04:13:12,950 INFO     Namespace(config='/scratch/ychen855/hand_gesture/st_gcn/config/train_toyTestDataset.yaml', disable_cuda=False, dataset='/scratch/ychen855/hand_gesture/st_gcn/toyTestDataset/json_data', dataset_split='toyTestDataset/split/split_toy.json', log_file='/scratch/ychen855/hand_gesture/st_gcn/report_results/toyTest-win45.txt', dataset_cfg=0, train_batch=128, base_lr=0.01, dropout=0.2, epochs=300, workers=8, export_only=False, resume=None, experiment='/scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45', pretrained=False, num_keypoints=21, time_window=45, slack_len=0, num_actions=7, patiences=50, sample_interval=1, test_only=False, random_sample=False, uniform_sample=False, steps=[30, 50, 80], actions=['background', 'draw-check', 'draw-cross', 'point-left', 'point-right', 'rotate-ccw', 'rotate-cw'])
+2025-04-05 04:13:13,157 INFO     trainng on CUDA devices
+2025-04-05 04:13:13,157 INFO     Load adjacency matrix for 21-joint hand pose...
+2025-04-05 04:13:13,600 INFO     loading data
+2025-04-05 04:13:13,665 INFO     Split partition val, files count: 35
+2025-04-05 04:13:15,873 INFO     loaded data : testing (35)
+2025-04-05 04:13:15,874 INFO     Split partition train, files count: 70
+2025-04-05 04:13:18,891 INFO     loaded data : training (70)
+2025-04-05 04:13:18,891 INFO     Time elapsed: 5.9411
+2025-04-05 04:13:30,967 INFO     epoch 0 : training accuracy 15.714286, testing accuracy 14.285714, time elapsed 18.0173
+2025-04-05 04:13:30,967 INFO     failed paths test: []
+2025-04-05 04:13:31,497 INFO     epoch 1 : training accuracy 14.285714, testing accuracy 14.285714, time elapsed 18.5469
+2025-04-05 04:13:31,497 INFO     failed paths test: []
+2025-04-05 04:13:31,936 INFO     epoch 2 : training accuracy 20.000002, testing accuracy 14.285714, time elapsed 18.9860
+2025-04-05 04:13:31,936 INFO     failed paths test: []
+2025-04-05 04:13:32,397 INFO     epoch 3 : training accuracy 25.714285, testing accuracy 14.285714, time elapsed 19.4471
+2025-04-05 04:13:32,397 INFO     failed paths test: []
+2025-04-05 04:13:32,848 INFO     epoch 4 : training accuracy 18.571428, testing accuracy 14.285714, time elapsed 19.8981
+2025-04-05 04:13:32,848 INFO     failed paths test: []
+2025-04-05 04:13:33,302 INFO     epoch 5 : training accuracy 18.571428, testing accuracy 14.285714, time elapsed 20.3516
+2025-04-05 04:13:33,302 INFO     failed paths test: []
+2025-04-05 04:13:33,760 INFO     epoch 6 : training accuracy 20.000002, testing accuracy 14.285714, time elapsed 20.8098
+2025-04-05 04:13:33,760 INFO     failed paths test: []
+2025-04-05 04:13:34,215 INFO     epoch 7 : training accuracy 21.428572, testing accuracy 14.285714, time elapsed 21.2648
+2025-04-05 04:13:34,215 INFO     failed paths test: []
+2025-04-05 04:13:34,689 INFO     epoch 8 : training accuracy 21.428572, testing accuracy 14.285714, time elapsed 21.7393
+2025-04-05 04:13:34,689 INFO     failed paths test: []
+2025-04-05 04:13:35,129 INFO     epoch 9 : training accuracy 31.428570, testing accuracy 14.285714, time elapsed 22.1785
+2025-04-05 04:13:35,129 INFO     failed paths test: []
+2025-04-05 04:13:35,596 INFO     epoch 10 : training accuracy 31.428572, testing accuracy 14.285714, time elapsed 22.6463
+2025-04-05 04:13:35,596 INFO     failed paths test: []
+2025-04-05 04:13:36,045 INFO     epoch 11 : training accuracy 29.999998, testing accuracy 14.285714, time elapsed 23.0950
+2025-04-05 04:13:36,045 INFO     failed paths test: []
+2025-04-05 04:13:36,501 INFO     epoch 12 : training accuracy 37.142857, testing accuracy 14.285714, time elapsed 23.5511
+2025-04-05 04:13:36,501 INFO     failed paths test: []
+2025-04-05 04:13:36,955 INFO     epoch 13 : training accuracy 30.000002, testing accuracy 14.285714, time elapsed 24.0049
+2025-04-05 04:13:36,955 INFO     failed paths test: []
+2025-04-05 04:13:37,425 INFO     epoch 14 : training accuracy 32.857143, testing accuracy 14.285714, time elapsed 24.4749
+2025-04-05 04:13:37,425 INFO     failed paths test: []
+2025-04-05 04:13:37,879 INFO     epoch 15 : training accuracy 32.857143, testing accuracy 14.285714, time elapsed 24.9289
+2025-04-05 04:13:37,879 INFO     failed paths test: []
+2025-04-05 04:13:38,322 INFO     epoch 16 : training accuracy 42.857143, testing accuracy 14.285714, time elapsed 25.3724
+2025-04-05 04:13:38,323 INFO     failed paths test: []
+2025-04-05 04:13:38,771 INFO     epoch 17 : training accuracy 42.857143, testing accuracy 14.285714, time elapsed 25.8214
+2025-04-05 04:13:38,772 INFO     failed paths test: []
+2025-04-05 04:13:39,244 INFO     epoch 18 : training accuracy 38.571430, testing accuracy 14.285714, time elapsed 26.2937
+2025-04-05 04:13:39,244 INFO     failed paths test: []
+2025-04-05 04:13:39,710 INFO     epoch 19 : training accuracy 37.142857, testing accuracy 14.285714, time elapsed 26.7595
+2025-04-05 04:13:39,710 INFO     failed paths test: []
+2025-04-05 04:13:40,173 INFO     epoch 20 : training accuracy 38.571430, testing accuracy 14.285714, time elapsed 27.2228
+2025-04-05 04:13:40,173 INFO     failed paths test: []
+2025-04-05 04:13:40,629 INFO     epoch 21 : training accuracy 45.714283, testing accuracy 14.285714, time elapsed 27.6795
+2025-04-05 04:13:40,630 INFO     failed paths test: []
+2025-04-05 04:13:41,097 INFO     epoch 22 : training accuracy 50.000000, testing accuracy 14.285714, time elapsed 28.1469
+2025-04-05 04:13:41,097 INFO     failed paths test: []
+2025-04-05 04:13:41,551 INFO     epoch 23 : training accuracy 50.000000, testing accuracy 14.285714, time elapsed 28.6009
+2025-04-05 04:13:41,551 INFO     failed paths test: []
+2025-04-05 04:13:42,021 INFO     epoch 24 : training accuracy 54.285713, testing accuracy 14.285714, time elapsed 29.0711
+2025-04-05 04:13:42,021 INFO     failed paths test: []
+2025-04-05 04:13:42,476 INFO     epoch 25 : training accuracy 50.000000, testing accuracy 14.285714, time elapsed 29.5257
+2025-04-05 04:13:42,476 INFO     failed paths test: []
+2025-04-05 04:13:42,935 INFO     epoch 26 : training accuracy 44.285713, testing accuracy 14.285714, time elapsed 29.9847
+2025-04-05 04:13:42,935 INFO     failed paths test: []
+2025-04-05 04:13:43,395 INFO     epoch 27 : training accuracy 51.428570, testing accuracy 14.285714, time elapsed 30.4453
+2025-04-05 04:13:43,395 INFO     failed paths test: []
+2025-04-05 04:13:43,862 INFO     epoch 28 : training accuracy 48.571430, testing accuracy 14.285714, time elapsed 30.9117
+2025-04-05 04:13:43,862 INFO     failed paths test: []
+2025-04-05 04:13:44,313 INFO     epoch 29 : training accuracy 47.142857, testing accuracy 14.285714, time elapsed 31.3630
+2025-04-05 04:13:44,313 INFO     failed paths test: []
+2025-04-05 04:13:44,313 INFO     adjust learning rate to 0.001000
+2025-04-05 04:13:44,773 INFO     epoch 30 : training accuracy 54.285713, testing accuracy 14.285714, time elapsed 31.8232
+2025-04-05 04:13:44,773 INFO     failed paths test: []
+2025-04-05 04:13:45,243 INFO     epoch 31 : training accuracy 47.142860, testing accuracy 14.285714, time elapsed 32.2930
+2025-04-05 04:13:45,243 INFO     failed paths test: []
+2025-04-05 04:13:45,712 INFO     epoch 32 : training accuracy 59.999996, testing accuracy 14.285714, time elapsed 32.7615
+2025-04-05 04:13:45,712 INFO     failed paths test: []
+2025-04-05 04:13:46,163 INFO     epoch 33 : training accuracy 54.285717, testing accuracy 14.285714, time elapsed 33.2127
+2025-04-05 04:13:46,163 INFO     failed paths test: []
+2025-04-05 04:13:46,617 INFO     epoch 34 : training accuracy 61.428577, testing accuracy 14.285714, time elapsed 33.6670
+2025-04-05 04:13:46,617 INFO     failed paths test: []
+2025-04-05 04:13:47,070 INFO     epoch 35 : training accuracy 58.571430, testing accuracy 14.285714, time elapsed 34.1200
+2025-04-05 04:13:47,070 INFO     failed paths test: []
+2025-04-05 04:13:47,517 INFO     epoch 36 : training accuracy 57.142853, testing accuracy 14.285714, time elapsed 34.5667
+2025-04-05 04:13:47,517 INFO     failed paths test: []
+2025-04-05 04:13:47,969 INFO     epoch 37 : training accuracy 57.142853, testing accuracy 14.285714, time elapsed 35.0192
+2025-04-05 04:13:47,969 INFO     failed paths test: []
+2025-04-05 04:13:48,421 INFO     epoch 38 : training accuracy 58.571430, testing accuracy 14.285714, time elapsed 35.4710
+2025-04-05 04:13:48,421 INFO     failed paths test: []
+2025-04-05 04:13:48,869 INFO     epoch 39 : training accuracy 62.857143, testing accuracy 14.285714, time elapsed 35.9191
+2025-04-05 04:13:48,869 INFO     failed paths test: []
+2025-04-05 04:13:49,331 INFO     epoch 40 : training accuracy 61.428577, testing accuracy 14.285714, time elapsed 36.3814
+2025-04-05 04:13:49,332 INFO     failed paths test: []
+2025-04-05 04:13:49,782 INFO     epoch 41 : training accuracy 70.000000, testing accuracy 14.285714, time elapsed 36.8321
+2025-04-05 04:13:49,782 INFO     failed paths test: []
+2025-04-05 04:13:50,245 INFO     epoch 42 : training accuracy 68.571434, testing accuracy 14.285714, time elapsed 37.2947
+2025-04-05 04:13:50,245 INFO     failed paths test: []
+2025-04-05 04:13:50,699 INFO     epoch 43 : training accuracy 75.714287, testing accuracy 14.285714, time elapsed 37.7491
+2025-04-05 04:13:50,699 INFO     failed paths test: []
+2025-04-05 04:13:51,157 INFO     epoch 44 : training accuracy 67.142860, testing accuracy 14.285714, time elapsed 38.2068
+2025-04-05 04:13:51,157 INFO     failed paths test: []
+2025-04-05 04:13:51,604 INFO     epoch 45 : training accuracy 62.857143, testing accuracy 14.285714, time elapsed 38.6541
+2025-04-05 04:13:51,604 INFO     failed paths test: []
+2025-04-05 04:13:52,070 INFO     epoch 46 : training accuracy 64.285713, testing accuracy 14.285714, time elapsed 39.1202
+2025-04-05 04:13:52,070 INFO     failed paths test: []
+2025-04-05 04:13:52,521 INFO     epoch 47 : training accuracy 74.285713, testing accuracy 14.285714, time elapsed 39.5706
+2025-04-05 04:13:52,521 INFO     failed paths test: []
+2025-04-05 04:13:52,982 INFO     epoch 48 : training accuracy 69.999992, testing accuracy 14.285714, time elapsed 40.0324
+2025-04-05 04:13:52,983 INFO     failed paths test: []
+2025-04-05 04:13:53,432 INFO     epoch 49 : training accuracy 70.000000, testing accuracy 14.285714, time elapsed 40.4815
+2025-04-05 04:13:53,432 INFO     failed paths test: []
+2025-04-05 04:13:53,432 INFO     adjust learning rate to 0.000100
+2025-04-05 04:13:53,886 INFO     epoch 50 : training accuracy 74.285713, testing accuracy 14.285714, time elapsed 40.9363
+2025-04-05 04:13:53,886 INFO     failed paths test: []
+2025-04-05 04:13:54,338 INFO     epoch 51 : training accuracy 78.571426, testing accuracy 14.285714, time elapsed 41.3881
+2025-04-05 04:13:54,338 INFO     failed paths test: []
+2025-04-05 04:13:54,796 INFO     epoch 52 : training accuracy 74.285713, testing accuracy 14.285714, time elapsed 41.8459
+2025-04-05 04:13:54,796 INFO     failed paths test: []
+2025-04-05 04:13:55,263 INFO     epoch 53 : training accuracy 64.285713, testing accuracy 14.285714, time elapsed 42.3128
+2025-04-05 04:13:55,263 INFO     failed paths test: []
+2025-04-05 04:13:55,709 INFO     epoch 54 : training accuracy 70.000000, testing accuracy 14.285714, time elapsed 42.7592
+2025-04-05 04:13:55,709 INFO     failed paths test: []
+2025-04-05 04:13:56,190 INFO     epoch 55 : training accuracy 72.857140, testing accuracy 14.285714, time elapsed 43.2398
+2025-04-05 04:13:56,190 INFO     failed paths test: []
+2025-04-05 04:13:56,647 INFO     epoch 56 : training accuracy 64.285713, testing accuracy 14.285714, time elapsed 43.6971
+2025-04-05 04:13:56,647 INFO     failed paths test: []
+2025-04-05 04:13:57,095 INFO     epoch 57 : training accuracy 77.142845, testing accuracy 14.285714, time elapsed 44.1452
+2025-04-05 04:13:57,095 INFO     failed paths test: []
+2025-04-05 04:13:57,546 INFO     epoch 58 : training accuracy 81.428574, testing accuracy 14.285714, time elapsed 44.5960
+2025-04-05 04:13:57,546 INFO     failed paths test: []
+2025-04-05 04:13:57,998 INFO     epoch 59 : training accuracy 68.571434, testing accuracy 14.285714, time elapsed 45.0479
+2025-04-05 04:13:57,998 INFO     failed paths test: []
+2025-04-05 04:13:58,465 INFO     epoch 60 : training accuracy 77.142860, testing accuracy 14.285714, time elapsed 45.5151
+2025-04-05 04:13:58,465 INFO     failed paths test: []
+2025-04-05 04:13:58,931 INFO     epoch 61 : training accuracy 65.714287, testing accuracy 14.285714, time elapsed 45.9811
+2025-04-05 04:13:58,931 INFO     failed paths test: []
+2025-04-05 04:13:59,375 INFO     epoch 62 : training accuracy 70.000000, testing accuracy 14.285714, time elapsed 46.4250
+2025-04-05 04:13:59,375 INFO     failed paths test: []
+2025-04-05 04:13:59,833 INFO     epoch 63 : training accuracy 80.000008, testing accuracy 14.285714, time elapsed 46.8827
+2025-04-05 04:13:59,833 INFO     failed paths test: []
+2025-04-05 04:14:00,305 INFO     epoch 64 : training accuracy 74.285713, testing accuracy 14.285714, time elapsed 47.3547
+2025-04-05 04:14:00,305 INFO     failed paths test: []
+2025-04-05 04:14:00,764 INFO     epoch 65 : training accuracy 71.428574, testing accuracy 14.285714, time elapsed 47.8136
+2025-04-05 04:14:00,764 INFO     failed paths test: []
+2025-04-05 04:14:01,218 INFO     epoch 66 : training accuracy 71.428581, testing accuracy 14.285714, time elapsed 48.2685
+2025-04-05 04:14:01,219 INFO     failed paths test: []
+2025-04-05 04:14:01,671 INFO     epoch 67 : training accuracy 71.428574, testing accuracy 14.285714, time elapsed 48.7213
+2025-04-05 04:14:01,672 INFO     failed paths test: []
+2025-04-05 04:14:02,143 INFO     epoch 68 : training accuracy 71.428574, testing accuracy 14.285714, time elapsed 49.1931
+2025-04-05 04:14:02,143 INFO     failed paths test: []
+2025-04-05 04:14:02,605 INFO     epoch 69 : training accuracy 71.428574, testing accuracy 14.285714, time elapsed 49.6551
+2025-04-05 04:14:02,605 INFO     failed paths test: []
+2025-04-05 04:14:03,068 INFO     epoch 70 : training accuracy 74.285713, testing accuracy 14.285714, time elapsed 50.1180
+2025-04-05 04:14:03,068 INFO     failed paths test: []
+2025-04-05 04:14:03,525 INFO     epoch 71 : training accuracy 70.000000, testing accuracy 14.285714, time elapsed 50.5752
+2025-04-05 04:14:03,525 INFO     failed paths test: []
+2025-04-05 04:14:03,992 INFO     epoch 72 : training accuracy 75.714287, testing accuracy 14.285714, time elapsed 51.0417
+2025-04-05 04:14:03,992 INFO     failed paths test: []
+2025-04-05 04:14:04,447 INFO     epoch 73 : training accuracy 71.428574, testing accuracy 14.285714, time elapsed 51.4968
+2025-04-05 04:14:04,447 INFO     failed paths test: []
+2025-04-05 04:14:04,897 INFO     epoch 74 : training accuracy 78.571426, testing accuracy 14.285714, time elapsed 51.9468
+2025-04-05 04:14:04,897 INFO     failed paths test: []
+2025-04-05 04:14:05,349 INFO     epoch 75 : training accuracy 70.000000, testing accuracy 14.285714, time elapsed 52.3991
+2025-04-05 04:14:05,349 INFO     failed paths test: []
+2025-04-05 04:14:05,820 INFO     epoch 76 : training accuracy 74.285713, testing accuracy 17.142857, time elapsed 52.8698
+2025-04-05 04:14:05,820 INFO     failed paths test: []
+2025-04-05 04:14:06,276 INFO     epoch 77 : training accuracy 77.142860, testing accuracy 17.142857, time elapsed 53.3261
+2025-04-05 04:14:06,276 INFO     failed paths test: []
+2025-04-05 04:14:06,732 INFO     epoch 78 : training accuracy 72.857147, testing accuracy 20.000000, time elapsed 53.7817
+2025-04-05 04:14:06,732 INFO     failed paths test: []
+2025-04-05 04:14:07,212 INFO     epoch 79 : training accuracy 75.714287, testing accuracy 25.714286, time elapsed 54.2617
+2025-04-05 04:14:07,212 INFO     failed paths test: []
+2025-04-05 04:14:07,212 INFO     adjust learning rate to 0.000010
+2025-04-05 04:14:07,679 INFO     epoch 80 : training accuracy 75.714287, testing accuracy 31.428571, time elapsed 54.7286
+2025-04-05 04:14:07,679 INFO     failed paths test: []
+2025-04-05 04:14:08,142 INFO     epoch 81 : training accuracy 78.571426, testing accuracy 37.142857, time elapsed 55.1919
+2025-04-05 04:14:08,142 INFO     failed paths test: []
+2025-04-05 04:14:08,612 INFO     epoch 82 : training accuracy 74.285713, testing accuracy 37.142857, time elapsed 55.6615
+2025-04-05 04:14:08,612 INFO     failed paths test: []
+2025-04-05 04:14:09,077 INFO     epoch 83 : training accuracy 74.285713, testing accuracy 42.857143, time elapsed 56.1267
+2025-04-05 04:14:09,077 INFO     failed paths test: []
+2025-04-05 04:14:09,539 INFO     epoch 84 : training accuracy 67.142853, testing accuracy 42.857143, time elapsed 56.5891
+2025-04-05 04:14:09,539 INFO     failed paths test: []
+2025-04-05 04:14:09,994 INFO     epoch 85 : training accuracy 78.571426, testing accuracy 42.857143, time elapsed 57.0438
+2025-04-05 04:14:09,994 INFO     failed paths test: []
+2025-04-05 04:14:10,455 INFO     epoch 86 : training accuracy 71.428581, testing accuracy 48.571429, time elapsed 57.5051
+2025-04-05 04:14:10,455 INFO     failed paths test: []
+2025-04-05 04:14:10,927 INFO     epoch 87 : training accuracy 74.285713, testing accuracy 51.428571, time elapsed 57.9770
+2025-04-05 04:14:10,927 INFO     failed paths test: []
+2025-04-05 04:14:10,927 INFO     Confusion matrix: test
+2025-04-05 04:14:10,928 INFO     [[2 0 0 0 0 1 2]
+ [1 3 1 0 0 0 0]
+ [0 0 4 0 0 1 0]
+ [1 0 0 4 0 0 0]
+ [0 0 0 0 0 0 5]
+ [0 0 0 0 0 0 5]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:14:10,971 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch87_val51_train74.pt.
+2025-04-05 04:14:11,427 INFO     epoch 88 : training accuracy 70.000000, testing accuracy 51.428571, time elapsed 58.4770
+2025-04-05 04:14:11,427 INFO     failed paths test: []
+2025-04-05 04:14:11,427 INFO     Confusion matrix: test
+2025-04-05 04:14:11,427 INFO     [[1 1 0 1 0 1 1]
+ [1 3 1 0 0 0 0]
+ [0 0 4 0 0 1 0]
+ [0 0 0 5 0 0 0]
+ [0 0 0 0 0 0 5]
+ [0 0 0 0 0 0 5]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:14:11,450 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch88_val51_train70.pt.
+2025-04-05 04:14:11,917 INFO     epoch 89 : training accuracy 77.142860, testing accuracy 60.000000, time elapsed 58.9672
+2025-04-05 04:14:11,917 INFO     failed paths test: []
+2025-04-05 04:14:11,917 INFO     Confusion matrix: test
+2025-04-05 04:14:11,918 INFO     [[1 0 0 1 1 1 1]
+ [1 3 1 0 0 0 0]
+ [0 0 4 0 0 1 0]
+ [0 0 0 5 0 0 0]
+ [0 0 0 0 1 0 4]
+ [0 0 0 0 0 2 3]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:14:12,005 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch89_val60_train77.pt.
+2025-04-05 04:14:12,459 INFO     epoch 90 : training accuracy 72.857140, testing accuracy 51.428571, time elapsed 59.5091
+2025-04-05 04:14:12,459 INFO     no improve epochs: 1, best val accuracy: 60.000000
+2025-04-05 04:14:12,918 INFO     epoch 91 : training accuracy 74.285713, testing accuracy 54.285714, time elapsed 59.9678
+2025-04-05 04:14:12,918 INFO     no improve epochs: 2, best val accuracy: 60.000000
+2025-04-05 04:14:13,379 INFO     epoch 92 : training accuracy 78.571426, testing accuracy 57.142857, time elapsed 60.4295
+2025-04-05 04:14:13,380 INFO     no improve epochs: 3, best val accuracy: 60.000000
+2025-04-05 04:14:13,830 INFO     epoch 93 : training accuracy 80.000000, testing accuracy 60.000000, time elapsed 60.8803
+2025-04-05 04:14:13,830 INFO     failed paths test: []
+2025-04-05 04:14:13,830 INFO     Confusion matrix: test
+2025-04-05 04:14:13,831 INFO     [[1 1 1 1 0 0 1]
+ [1 4 0 0 0 0 0]
+ [0 0 4 0 0 1 0]
+ [0 0 0 5 0 0 0]
+ [0 0 0 0 0 0 5]
+ [0 0 0 0 0 2 3]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:14:13,855 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch93_val60_train80.pt.
+2025-04-05 04:14:14,309 INFO     epoch 94 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 61.3589
+2025-04-05 04:14:14,309 INFO     failed paths test: []
+2025-04-05 04:14:14,309 INFO     Confusion matrix: test
+2025-04-05 04:14:14,309 INFO     [[1 0 0 1 1 2 0]
+ [1 4 0 0 0 0 0]
+ [0 0 4 0 0 1 0]
+ [0 0 0 5 0 0 0]
+ [0 0 0 0 1 0 4]
+ [0 0 0 0 0 2 3]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:14:14,337 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch94_val63_train77.pt.
+2025-04-05 04:14:14,805 INFO     epoch 95 : training accuracy 75.714287, testing accuracy 62.857143, time elapsed 61.8548
+2025-04-05 04:14:14,805 INFO     failed paths test: []
+2025-04-05 04:14:14,805 INFO     Confusion matrix: test
+2025-04-05 04:14:14,805 INFO     [[1 0 0 1 1 1 1]
+ [1 4 0 0 0 0 0]
+ [0 1 4 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [0 0 0 0 1 0 4]
+ [0 0 0 0 0 2 3]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:14:14,829 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch95_val63_train76.pt.
+2025-04-05 04:14:15,309 INFO     epoch 96 : training accuracy 78.571434, testing accuracy 68.571429, time elapsed 62.3594
+2025-04-05 04:14:15,310 INFO     failed paths test: []
+2025-04-05 04:14:15,310 INFO     Confusion matrix: test
+2025-04-05 04:14:15,310 INFO     [[1 1 1 1 1 0 0]
+ [1 4 0 0 0 0 0]
+ [0 1 4 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [0 0 0 0 3 0 2]
+ [0 0 0 0 0 2 3]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:14:15,409 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch96_val69_train79.pt.
+2025-04-05 04:14:15,866 INFO     epoch 97 : training accuracy 80.000000, testing accuracy 65.714286, time elapsed 62.9156
+2025-04-05 04:14:15,866 INFO     no improve epochs: 1, best val accuracy: 68.571429
+2025-04-05 04:14:16,322 INFO     epoch 98 : training accuracy 80.000000, testing accuracy 71.428571, time elapsed 63.3724
+2025-04-05 04:14:16,323 INFO     failed paths test: []
+2025-04-05 04:14:16,323 INFO     Confusion matrix: test
+2025-04-05 04:14:16,323 INFO     [[2 1 1 1 0 0 0]
+ [1 4 0 0 0 0 0]
+ [0 0 5 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [1 0 0 0 2 0 2]
+ [0 0 0 0 0 2 3]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:14:16,369 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch98_val71_train80.pt.
+2025-04-05 04:14:16,820 INFO     epoch 99 : training accuracy 80.000000, testing accuracy 68.571429, time elapsed 63.8696
+2025-04-05 04:14:16,820 INFO     no improve epochs: 1, best val accuracy: 71.428571
+2025-04-05 04:14:17,275 INFO     epoch 100 : training accuracy 82.857140, testing accuracy 71.428571, time elapsed 64.3253
+2025-04-05 04:14:17,275 INFO     failed paths test: []
+2025-04-05 04:14:17,275 INFO     Confusion matrix: test
+2025-04-05 04:14:17,276 INFO     [[2 0 1 1 0 0 1]
+ [1 4 0 0 0 0 0]
+ [0 1 4 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [1 0 0 0 2 0 2]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:14:17,332 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch100_val71_train83.pt.
+2025-04-05 04:14:17,803 INFO     epoch 101 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 64.8528
+2025-04-05 04:14:17,803 INFO     no improve epochs: 1, best val accuracy: 71.428571
+2025-04-05 04:14:18,266 INFO     epoch 102 : training accuracy 70.000000, testing accuracy 71.428571, time elapsed 65.3159
+2025-04-05 04:14:18,266 INFO     failed paths test: []
+2025-04-05 04:14:18,266 INFO     Confusion matrix: test
+2025-04-05 04:14:18,266 INFO     [[2 0 2 1 0 0 0]
+ [1 4 0 0 0 0 0]
+ [0 0 5 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [1 0 0 0 2 0 2]
+ [0 0 0 0 0 2 3]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:14:18,290 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch102_val71_train70.pt.
+2025-04-05 04:14:18,740 INFO     epoch 103 : training accuracy 70.000000, testing accuracy 65.714286, time elapsed 65.7900
+2025-04-05 04:14:18,740 INFO     no improve epochs: 1, best val accuracy: 71.428571
+2025-04-05 04:14:19,195 INFO     epoch 104 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 66.2453
+2025-04-05 04:14:19,195 INFO     no improve epochs: 2, best val accuracy: 71.428571
+2025-04-05 04:14:19,651 INFO     epoch 105 : training accuracy 70.000008, testing accuracy 71.428571, time elapsed 66.7010
+2025-04-05 04:14:19,651 INFO     failed paths test: []
+2025-04-05 04:14:19,651 INFO     Confusion matrix: test
+2025-04-05 04:14:19,651 INFO     [[2 0 1 1 0 0 1]
+ [1 4 0 0 0 0 0]
+ [0 1 4 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [1 0 0 0 2 0 2]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:14:19,724 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch105_val71_train70.pt.
+2025-04-05 04:14:20,184 INFO     epoch 106 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 67.2342
+2025-04-05 04:14:20,184 INFO     no improve epochs: 1, best val accuracy: 71.428571
+2025-04-05 04:14:20,644 INFO     epoch 107 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 67.6937
+2025-04-05 04:14:20,644 INFO     no improve epochs: 2, best val accuracy: 71.428571
+2025-04-05 04:14:21,114 INFO     epoch 108 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 68.1644
+2025-04-05 04:14:21,115 INFO     no improve epochs: 3, best val accuracy: 71.428571
+2025-04-05 04:14:21,574 INFO     epoch 109 : training accuracy 78.571426, testing accuracy 71.428571, time elapsed 68.6235
+2025-04-05 04:14:21,574 INFO     failed paths test: []
+2025-04-05 04:14:21,574 INFO     Confusion matrix: test
+2025-04-05 04:14:21,574 INFO     [[2 0 1 2 0 0 0]
+ [0 4 1 0 0 0 0]
+ [0 1 4 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [2 0 0 0 2 0 1]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:14:21,669 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch109_val71_train79.pt.
+2025-04-05 04:14:22,135 INFO     epoch 110 : training accuracy 75.714287, testing accuracy 65.714286, time elapsed 69.1851
+2025-04-05 04:14:22,135 INFO     no improve epochs: 1, best val accuracy: 71.428571
+2025-04-05 04:14:22,590 INFO     epoch 111 : training accuracy 81.428574, testing accuracy 65.714286, time elapsed 69.6404
+2025-04-05 04:14:22,591 INFO     no improve epochs: 2, best val accuracy: 71.428571
+2025-04-05 04:14:23,054 INFO     epoch 112 : training accuracy 78.571426, testing accuracy 65.714286, time elapsed 70.1039
+2025-04-05 04:14:23,054 INFO     no improve epochs: 3, best val accuracy: 71.428571
+2025-04-05 04:14:23,503 INFO     epoch 113 : training accuracy 77.142860, testing accuracy 65.714286, time elapsed 70.5529
+2025-04-05 04:14:23,503 INFO     no improve epochs: 4, best val accuracy: 71.428571
+2025-04-05 04:14:23,963 INFO     epoch 114 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 71.0126
+2025-04-05 04:14:23,963 INFO     no improve epochs: 5, best val accuracy: 71.428571
+2025-04-05 04:14:24,420 INFO     epoch 115 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 71.4702
+2025-04-05 04:14:24,420 INFO     no improve epochs: 6, best val accuracy: 71.428571
+2025-04-05 04:14:24,890 INFO     epoch 116 : training accuracy 84.285713, testing accuracy 65.714286, time elapsed 71.9396
+2025-04-05 04:14:24,890 INFO     no improve epochs: 7, best val accuracy: 71.428571
+2025-04-05 04:14:25,351 INFO     epoch 117 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 72.4005
+2025-04-05 04:14:25,351 INFO     no improve epochs: 8, best val accuracy: 71.428571
+2025-04-05 04:14:25,815 INFO     epoch 118 : training accuracy 70.000000, testing accuracy 65.714286, time elapsed 72.8651
+2025-04-05 04:14:25,815 INFO     no improve epochs: 9, best val accuracy: 71.428571
+2025-04-05 04:14:26,274 INFO     epoch 119 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 73.3241
+2025-04-05 04:14:26,274 INFO     no improve epochs: 10, best val accuracy: 71.428571
+2025-04-05 04:14:26,731 INFO     epoch 120 : training accuracy 71.428574, testing accuracy 62.857143, time elapsed 73.7811
+2025-04-05 04:14:26,731 INFO     no improve epochs: 11, best val accuracy: 71.428571
+2025-04-05 04:14:27,191 INFO     epoch 121 : training accuracy 72.857140, testing accuracy 71.428571, time elapsed 74.2412
+2025-04-05 04:14:27,191 INFO     failed paths test: []
+2025-04-05 04:14:27,191 INFO     Confusion matrix: test
+2025-04-05 04:14:27,192 INFO     [[2 0 2 1 0 0 0]
+ [0 4 1 0 0 0 0]
+ [0 0 5 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [2 0 0 0 1 0 2]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:14:27,236 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch121_val71_train73.pt.
+2025-04-05 04:14:27,695 INFO     epoch 122 : training accuracy 82.857140, testing accuracy 65.714286, time elapsed 74.7448
+2025-04-05 04:14:27,695 INFO     no improve epochs: 1, best val accuracy: 71.428571
+2025-04-05 04:14:28,164 INFO     epoch 123 : training accuracy 67.142860, testing accuracy 65.714286, time elapsed 75.2141
+2025-04-05 04:14:28,164 INFO     no improve epochs: 2, best val accuracy: 71.428571
+2025-04-05 04:14:28,633 INFO     epoch 124 : training accuracy 70.000000, testing accuracy 68.571429, time elapsed 75.6832
+2025-04-05 04:14:28,633 INFO     no improve epochs: 3, best val accuracy: 71.428571
+2025-04-05 04:14:29,090 INFO     epoch 125 : training accuracy 77.142868, testing accuracy 62.857143, time elapsed 76.1401
+2025-04-05 04:14:29,090 INFO     no improve epochs: 4, best val accuracy: 71.428571
+2025-04-05 04:14:29,543 INFO     epoch 126 : training accuracy 71.428574, testing accuracy 65.714286, time elapsed 76.5928
+2025-04-05 04:14:29,543 INFO     no improve epochs: 5, best val accuracy: 71.428571
+2025-04-05 04:14:30,007 INFO     epoch 127 : training accuracy 75.714287, testing accuracy 65.714286, time elapsed 77.0566
+2025-04-05 04:14:30,007 INFO     no improve epochs: 6, best val accuracy: 71.428571
+2025-04-05 04:14:30,464 INFO     epoch 128 : training accuracy 80.000000, testing accuracy 62.857143, time elapsed 77.5145
+2025-04-05 04:14:30,465 INFO     no improve epochs: 7, best val accuracy: 71.428571
+2025-04-05 04:14:30,916 INFO     epoch 129 : training accuracy 75.714287, testing accuracy 65.714286, time elapsed 77.9657
+2025-04-05 04:14:30,916 INFO     no improve epochs: 8, best val accuracy: 71.428571
+2025-04-05 04:14:31,373 INFO     epoch 130 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 78.4234
+2025-04-05 04:14:31,374 INFO     no improve epochs: 9, best val accuracy: 71.428571
+2025-04-05 04:14:31,843 INFO     epoch 131 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 78.8927
+2025-04-05 04:14:31,843 INFO     no improve epochs: 10, best val accuracy: 71.428571
+2025-04-05 04:14:32,300 INFO     epoch 132 : training accuracy 81.428574, testing accuracy 62.857143, time elapsed 79.3504
+2025-04-05 04:14:32,301 INFO     no improve epochs: 11, best val accuracy: 71.428571
+2025-04-05 04:14:32,767 INFO     epoch 133 : training accuracy 71.428574, testing accuracy 68.571429, time elapsed 79.8175
+2025-04-05 04:14:32,768 INFO     no improve epochs: 12, best val accuracy: 71.428571
+2025-04-05 04:14:33,218 INFO     epoch 134 : training accuracy 78.571426, testing accuracy 68.571429, time elapsed 80.2681
+2025-04-05 04:14:33,218 INFO     no improve epochs: 13, best val accuracy: 71.428571
+2025-04-05 04:14:33,682 INFO     epoch 135 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 80.7319
+2025-04-05 04:14:33,682 INFO     no improve epochs: 14, best val accuracy: 71.428571
+2025-04-05 04:14:34,134 INFO     epoch 136 : training accuracy 68.571434, testing accuracy 68.571429, time elapsed 81.1839
+2025-04-05 04:14:34,134 INFO     no improve epochs: 15, best val accuracy: 71.428571
+2025-04-05 04:14:34,607 INFO     epoch 137 : training accuracy 72.857140, testing accuracy 65.714286, time elapsed 81.6566
+2025-04-05 04:14:34,607 INFO     no improve epochs: 16, best val accuracy: 71.428571
+2025-04-05 04:14:35,058 INFO     epoch 138 : training accuracy 72.857140, testing accuracy 68.571429, time elapsed 82.1078
+2025-04-05 04:14:35,058 INFO     no improve epochs: 17, best val accuracy: 71.428571
+2025-04-05 04:14:35,523 INFO     epoch 139 : training accuracy 80.000008, testing accuracy 65.714286, time elapsed 82.5726
+2025-04-05 04:14:35,523 INFO     no improve epochs: 18, best val accuracy: 71.428571
+2025-04-05 04:14:35,984 INFO     epoch 140 : training accuracy 78.571426, testing accuracy 68.571429, time elapsed 83.0335
+2025-04-05 04:14:35,984 INFO     no improve epochs: 19, best val accuracy: 71.428571
+2025-04-05 04:14:36,456 INFO     epoch 141 : training accuracy 72.857140, testing accuracy 65.714286, time elapsed 83.5055
+2025-04-05 04:14:36,456 INFO     no improve epochs: 20, best val accuracy: 71.428571
+2025-04-05 04:14:36,925 INFO     epoch 142 : training accuracy 77.142860, testing accuracy 68.571429, time elapsed 83.9751
+2025-04-05 04:14:36,925 INFO     no improve epochs: 21, best val accuracy: 71.428571
+2025-04-05 04:14:37,391 INFO     epoch 143 : training accuracy 68.571434, testing accuracy 62.857143, time elapsed 84.4412
+2025-04-05 04:14:37,391 INFO     no improve epochs: 22, best val accuracy: 71.428571
+2025-04-05 04:14:37,854 INFO     epoch 144 : training accuracy 81.428574, testing accuracy 65.714286, time elapsed 84.9040
+2025-04-05 04:14:37,854 INFO     no improve epochs: 23, best val accuracy: 71.428571
+2025-04-05 04:14:38,303 INFO     epoch 145 : training accuracy 72.857140, testing accuracy 62.857143, time elapsed 85.3525
+2025-04-05 04:14:38,303 INFO     no improve epochs: 24, best val accuracy: 71.428571
+2025-04-05 04:14:38,761 INFO     epoch 146 : training accuracy 85.714287, testing accuracy 60.000000, time elapsed 85.8114
+2025-04-05 04:14:38,762 INFO     no improve epochs: 25, best val accuracy: 71.428571
+2025-04-05 04:14:39,212 INFO     epoch 147 : training accuracy 81.428574, testing accuracy 60.000000, time elapsed 86.2621
+2025-04-05 04:14:39,212 INFO     no improve epochs: 26, best val accuracy: 71.428571
+2025-04-05 04:14:39,675 INFO     epoch 148 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 86.7246
+2025-04-05 04:14:39,675 INFO     no improve epochs: 27, best val accuracy: 71.428571
+2025-04-05 04:14:40,129 INFO     epoch 149 : training accuracy 72.857140, testing accuracy 71.428571, time elapsed 87.1788
+2025-04-05 04:14:40,129 INFO     failed paths test: []
+2025-04-05 04:14:40,129 INFO     Confusion matrix: test
+2025-04-05 04:14:40,129 INFO     [[1 0 3 1 0 0 0]
+ [0 4 1 0 0 0 0]
+ [0 0 5 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [2 0 0 0 2 0 1]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:14:40,152 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch149_val71_train73.pt.
+2025-04-05 04:14:40,621 INFO     epoch 150 : training accuracy 72.857140, testing accuracy 65.714286, time elapsed 87.6708
+2025-04-05 04:14:40,621 INFO     no improve epochs: 1, best val accuracy: 71.428571
+2025-04-05 04:14:41,093 INFO     epoch 151 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 88.1426
+2025-04-05 04:14:41,093 INFO     no improve epochs: 2, best val accuracy: 71.428571
+2025-04-05 04:14:41,552 INFO     epoch 152 : training accuracy 72.857140, testing accuracy 68.571429, time elapsed 88.6024
+2025-04-05 04:14:41,553 INFO     no improve epochs: 3, best val accuracy: 71.428571
+2025-04-05 04:14:42,025 INFO     epoch 153 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 89.0748
+2025-04-05 04:14:42,025 INFO     no improve epochs: 4, best val accuracy: 71.428571
+2025-04-05 04:14:42,485 INFO     epoch 154 : training accuracy 75.714287, testing accuracy 65.714286, time elapsed 89.5349
+2025-04-05 04:14:42,485 INFO     no improve epochs: 5, best val accuracy: 71.428571
+2025-04-05 04:14:42,931 INFO     epoch 155 : training accuracy 71.428574, testing accuracy 62.857143, time elapsed 89.9814
+2025-04-05 04:14:42,932 INFO     no improve epochs: 6, best val accuracy: 71.428571
+2025-04-05 04:14:43,393 INFO     epoch 156 : training accuracy 78.571426, testing accuracy 60.000000, time elapsed 90.4431
+2025-04-05 04:14:43,393 INFO     no improve epochs: 7, best val accuracy: 71.428571
+2025-04-05 04:14:43,851 INFO     epoch 157 : training accuracy 78.571426, testing accuracy 65.714286, time elapsed 90.9006
+2025-04-05 04:14:43,851 INFO     no improve epochs: 8, best val accuracy: 71.428571
+2025-04-05 04:14:44,327 INFO     epoch 158 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 91.3772
+2025-04-05 04:14:44,327 INFO     no improve epochs: 9, best val accuracy: 71.428571
+2025-04-05 04:14:44,793 INFO     epoch 159 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 91.8430
+2025-04-05 04:14:44,793 INFO     no improve epochs: 10, best val accuracy: 71.428571
+2025-04-05 04:14:45,255 INFO     epoch 160 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 92.3052
+2025-04-05 04:14:45,255 INFO     no improve epochs: 11, best val accuracy: 71.428571
+2025-04-05 04:14:45,728 INFO     epoch 161 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 92.7777
+2025-04-05 04:14:45,728 INFO     no improve epochs: 12, best val accuracy: 71.428571
+2025-04-05 04:14:46,178 INFO     epoch 162 : training accuracy 84.285713, testing accuracy 62.857143, time elapsed 93.2281
+2025-04-05 04:14:46,178 INFO     no improve epochs: 13, best val accuracy: 71.428571
+2025-04-05 04:14:46,634 INFO     epoch 163 : training accuracy 71.428574, testing accuracy 62.857143, time elapsed 93.6836
+2025-04-05 04:14:46,634 INFO     no improve epochs: 14, best val accuracy: 71.428571
+2025-04-05 04:14:47,096 INFO     epoch 164 : training accuracy 75.714287, testing accuracy 65.714286, time elapsed 94.1464
+2025-04-05 04:14:47,097 INFO     no improve epochs: 15, best val accuracy: 71.428571
+2025-04-05 04:14:47,559 INFO     epoch 165 : training accuracy 70.000000, testing accuracy 62.857143, time elapsed 94.6091
+2025-04-05 04:14:47,559 INFO     no improve epochs: 16, best val accuracy: 71.428571
+2025-04-05 04:14:48,009 INFO     epoch 166 : training accuracy 77.142860, testing accuracy 68.571429, time elapsed 95.0590
+2025-04-05 04:14:48,009 INFO     no improve epochs: 17, best val accuracy: 71.428571
+2025-04-05 04:14:48,456 INFO     epoch 167 : training accuracy 72.857140, testing accuracy 65.714286, time elapsed 95.5061
+2025-04-05 04:14:48,456 INFO     no improve epochs: 18, best val accuracy: 71.428571
+2025-04-05 04:14:48,903 INFO     epoch 168 : training accuracy 72.857140, testing accuracy 68.571429, time elapsed 95.9525
+2025-04-05 04:14:48,903 INFO     no improve epochs: 19, best val accuracy: 71.428571
+2025-04-05 04:14:49,364 INFO     epoch 169 : training accuracy 77.142860, testing accuracy 60.000000, time elapsed 96.4143
+2025-04-05 04:14:49,365 INFO     no improve epochs: 20, best val accuracy: 71.428571
+2025-04-05 04:14:49,832 INFO     epoch 170 : training accuracy 72.857140, testing accuracy 65.714286, time elapsed 96.8816
+2025-04-05 04:14:49,832 INFO     no improve epochs: 21, best val accuracy: 71.428571
+2025-04-05 04:14:50,277 INFO     epoch 171 : training accuracy 80.000000, testing accuracy 62.857143, time elapsed 97.3267
+2025-04-05 04:14:50,277 INFO     no improve epochs: 22, best val accuracy: 71.428571
+2025-04-05 04:14:50,732 INFO     epoch 172 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 97.7823
+2025-04-05 04:14:50,733 INFO     no improve epochs: 23, best val accuracy: 71.428571
+2025-04-05 04:14:51,190 INFO     epoch 173 : training accuracy 78.571426, testing accuracy 65.714286, time elapsed 98.2401
+2025-04-05 04:14:51,190 INFO     no improve epochs: 24, best val accuracy: 71.428571
+2025-04-05 04:14:51,637 INFO     epoch 174 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 98.6873
+2025-04-05 04:14:51,638 INFO     no improve epochs: 25, best val accuracy: 71.428571
+2025-04-05 04:14:52,108 INFO     epoch 175 : training accuracy 75.714287, testing accuracy 71.428571, time elapsed 99.1577
+2025-04-05 04:14:52,108 INFO     failed paths test: []
+2025-04-05 04:14:52,108 INFO     Confusion matrix: test
+2025-04-05 04:14:52,108 INFO     [[1 0 2 1 0 0 1]
+ [0 4 1 0 0 0 0]
+ [0 0 5 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [2 0 0 0 2 0 1]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:14:52,208 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch175_val71_train76.pt.
+2025-04-05 04:14:52,676 INFO     epoch 176 : training accuracy 78.571426, testing accuracy 62.857143, time elapsed 99.7258
+2025-04-05 04:14:52,676 INFO     no improve epochs: 1, best val accuracy: 71.428571
+2025-04-05 04:14:53,138 INFO     epoch 177 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 100.1880
+2025-04-05 04:14:53,138 INFO     no improve epochs: 2, best val accuracy: 71.428571
+2025-04-05 04:14:53,591 INFO     epoch 178 : training accuracy 77.142860, testing accuracy 68.571429, time elapsed 100.6407
+2025-04-05 04:14:53,591 INFO     no improve epochs: 3, best val accuracy: 71.428571
+2025-04-05 04:14:54,053 INFO     epoch 179 : training accuracy 81.428574, testing accuracy 62.857143, time elapsed 101.1033
+2025-04-05 04:14:54,053 INFO     no improve epochs: 4, best val accuracy: 71.428571
+2025-04-05 04:14:54,528 INFO     epoch 180 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 101.5781
+2025-04-05 04:14:54,528 INFO     no improve epochs: 5, best val accuracy: 71.428571
+2025-04-05 04:14:54,999 INFO     epoch 181 : training accuracy 80.000008, testing accuracy 62.857143, time elapsed 102.0493
+2025-04-05 04:14:54,999 INFO     no improve epochs: 6, best val accuracy: 71.428571
+2025-04-05 04:14:55,455 INFO     epoch 182 : training accuracy 75.714287, testing accuracy 68.571429, time elapsed 102.5053
+2025-04-05 04:14:55,455 INFO     no improve epochs: 7, best val accuracy: 71.428571
+2025-04-05 04:14:55,921 INFO     epoch 183 : training accuracy 80.000008, testing accuracy 65.714286, time elapsed 102.9707
+2025-04-05 04:14:55,921 INFO     no improve epochs: 8, best val accuracy: 71.428571
+2025-04-05 04:14:56,376 INFO     epoch 184 : training accuracy 72.857140, testing accuracy 65.714286, time elapsed 103.4263
+2025-04-05 04:14:56,376 INFO     no improve epochs: 9, best val accuracy: 71.428571
+2025-04-05 04:14:56,840 INFO     epoch 185 : training accuracy 68.571434, testing accuracy 62.857143, time elapsed 103.8903
+2025-04-05 04:14:56,841 INFO     no improve epochs: 10, best val accuracy: 71.428571
+2025-04-05 04:14:57,306 INFO     epoch 186 : training accuracy 74.285713, testing accuracy 71.428571, time elapsed 104.3558
+2025-04-05 04:14:57,306 INFO     failed paths test: []
+2025-04-05 04:14:57,306 INFO     Confusion matrix: test
+2025-04-05 04:14:57,306 INFO     [[1 0 2 1 0 0 1]
+ [0 4 1 0 0 0 0]
+ [0 0 5 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [2 0 0 0 2 0 1]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:14:57,327 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch186_val71_train74.pt.
+2025-04-05 04:14:57,788 INFO     epoch 187 : training accuracy 75.714287, testing accuracy 68.571429, time elapsed 104.8384
+2025-04-05 04:14:57,789 INFO     no improve epochs: 1, best val accuracy: 71.428571
+2025-04-05 04:14:58,252 INFO     epoch 188 : training accuracy 72.857147, testing accuracy 65.714286, time elapsed 105.3015
+2025-04-05 04:14:58,252 INFO     no improve epochs: 2, best val accuracy: 71.428571
+2025-04-05 04:14:58,704 INFO     epoch 189 : training accuracy 77.142860, testing accuracy 65.714286, time elapsed 105.7538
+2025-04-05 04:14:58,704 INFO     no improve epochs: 3, best val accuracy: 71.428571
+2025-04-05 04:14:59,163 INFO     epoch 190 : training accuracy 78.571426, testing accuracy 62.857143, time elapsed 106.2127
+2025-04-05 04:14:59,163 INFO     no improve epochs: 4, best val accuracy: 71.428571
+2025-04-05 04:14:59,624 INFO     epoch 191 : training accuracy 75.714287, testing accuracy 65.714286, time elapsed 106.6744
+2025-04-05 04:14:59,625 INFO     no improve epochs: 5, best val accuracy: 71.428571
+2025-04-05 04:15:00,088 INFO     epoch 192 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 107.1382
+2025-04-05 04:15:00,088 INFO     no improve epochs: 6, best val accuracy: 71.428571
+2025-04-05 04:15:00,558 INFO     epoch 193 : training accuracy 70.000000, testing accuracy 68.571429, time elapsed 107.6079
+2025-04-05 04:15:00,558 INFO     no improve epochs: 7, best val accuracy: 71.428571
+2025-04-05 04:15:01,025 INFO     epoch 194 : training accuracy 78.571426, testing accuracy 65.714286, time elapsed 108.0751
+2025-04-05 04:15:01,025 INFO     no improve epochs: 8, best val accuracy: 71.428571
+2025-04-05 04:15:01,502 INFO     epoch 195 : training accuracy 77.142860, testing accuracy 71.428571, time elapsed 108.5521
+2025-04-05 04:15:01,502 INFO     failed paths test: []
+2025-04-05 04:15:01,502 INFO     Confusion matrix: test
+2025-04-05 04:15:01,502 INFO     [[1 0 2 2 0 0 0]
+ [0 4 1 0 0 0 0]
+ [0 0 5 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [2 0 0 0 2 0 1]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:15:01,583 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch195_val71_train77.pt.
+2025-04-05 04:15:02,049 INFO     epoch 196 : training accuracy 77.142860, testing accuracy 65.714286, time elapsed 109.0994
+2025-04-05 04:15:02,050 INFO     no improve epochs: 1, best val accuracy: 71.428571
+2025-04-05 04:15:02,516 INFO     epoch 197 : training accuracy 72.857140, testing accuracy 62.857143, time elapsed 109.5661
+2025-04-05 04:15:02,516 INFO     no improve epochs: 2, best val accuracy: 71.428571
+2025-04-05 04:15:02,989 INFO     epoch 198 : training accuracy 75.714287, testing accuracy 68.571429, time elapsed 110.0390
+2025-04-05 04:15:02,989 INFO     no improve epochs: 3, best val accuracy: 71.428571
+2025-04-05 04:15:03,437 INFO     epoch 199 : training accuracy 74.285713, testing accuracy 60.000000, time elapsed 110.4873
+2025-04-05 04:15:03,437 INFO     no improve epochs: 4, best val accuracy: 71.428571
+2025-04-05 04:15:03,896 INFO     epoch 200 : training accuracy 74.285713, testing accuracy 60.000000, time elapsed 110.9458
+2025-04-05 04:15:03,896 INFO     no improve epochs: 5, best val accuracy: 71.428571
+2025-04-05 04:15:04,368 INFO     epoch 201 : training accuracy 71.428574, testing accuracy 62.857143, time elapsed 111.4182
+2025-04-05 04:15:04,368 INFO     no improve epochs: 6, best val accuracy: 71.428571
+2025-04-05 04:15:04,828 INFO     epoch 202 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 111.8783
+2025-04-05 04:15:04,829 INFO     no improve epochs: 7, best val accuracy: 71.428571
+2025-04-05 04:15:05,285 INFO     epoch 203 : training accuracy 81.428574, testing accuracy 65.714286, time elapsed 112.3348
+2025-04-05 04:15:05,285 INFO     no improve epochs: 8, best val accuracy: 71.428571
+2025-04-05 04:15:05,736 INFO     epoch 204 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 112.7862
+2025-04-05 04:15:05,736 INFO     no improve epochs: 9, best val accuracy: 71.428571
+2025-04-05 04:15:06,198 INFO     epoch 205 : training accuracy 81.428574, testing accuracy 68.571429, time elapsed 113.2475
+2025-04-05 04:15:06,198 INFO     no improve epochs: 10, best val accuracy: 71.428571
+2025-04-05 04:15:06,656 INFO     epoch 206 : training accuracy 81.428574, testing accuracy 65.714286, time elapsed 113.7060
+2025-04-05 04:15:06,656 INFO     no improve epochs: 11, best val accuracy: 71.428571
+2025-04-05 04:15:07,120 INFO     epoch 207 : training accuracy 80.000000, testing accuracy 65.714286, time elapsed 114.1695
+2025-04-05 04:15:07,120 INFO     no improve epochs: 12, best val accuracy: 71.428571
+2025-04-05 04:15:07,573 INFO     epoch 208 : training accuracy 78.571426, testing accuracy 68.571429, time elapsed 114.6230
+2025-04-05 04:15:07,573 INFO     no improve epochs: 13, best val accuracy: 71.428571
+2025-04-05 04:15:08,029 INFO     epoch 209 : training accuracy 78.571426, testing accuracy 65.714286, time elapsed 115.0787
+2025-04-05 04:15:08,029 INFO     no improve epochs: 14, best val accuracy: 71.428571
+2025-04-05 04:15:08,493 INFO     epoch 210 : training accuracy 75.714287, testing accuracy 65.714286, time elapsed 115.5431
+2025-04-05 04:15:08,493 INFO     no improve epochs: 15, best val accuracy: 71.428571
+2025-04-05 04:15:08,944 INFO     epoch 211 : training accuracy 59.999996, testing accuracy 68.571429, time elapsed 115.9944
+2025-04-05 04:15:08,945 INFO     no improve epochs: 16, best val accuracy: 71.428571
+2025-04-05 04:15:09,401 INFO     epoch 212 : training accuracy 77.142860, testing accuracy 65.714286, time elapsed 116.4513
+2025-04-05 04:15:09,401 INFO     no improve epochs: 17, best val accuracy: 71.428571
+2025-04-05 04:15:09,871 INFO     epoch 213 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 116.9211
+2025-04-05 04:15:09,871 INFO     no improve epochs: 18, best val accuracy: 71.428571
+2025-04-05 04:15:10,339 INFO     epoch 214 : training accuracy 68.571434, testing accuracy 62.857143, time elapsed 117.3889
+2025-04-05 04:15:10,339 INFO     no improve epochs: 19, best val accuracy: 71.428571
+2025-04-05 04:15:10,800 INFO     epoch 215 : training accuracy 80.000008, testing accuracy 62.857143, time elapsed 117.8501
+2025-04-05 04:15:10,800 INFO     no improve epochs: 20, best val accuracy: 71.428571
+2025-04-05 04:15:11,260 INFO     epoch 216 : training accuracy 81.428574, testing accuracy 65.714286, time elapsed 118.3104
+2025-04-05 04:15:11,261 INFO     no improve epochs: 21, best val accuracy: 71.428571
+2025-04-05 04:15:11,723 INFO     epoch 217 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 118.7732
+2025-04-05 04:15:11,723 INFO     no improve epochs: 22, best val accuracy: 71.428571
+2025-04-05 04:15:12,176 INFO     epoch 218 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 119.2259
+2025-04-05 04:15:12,176 INFO     no improve epochs: 23, best val accuracy: 71.428571
+2025-04-05 04:15:12,632 INFO     epoch 219 : training accuracy 81.428574, testing accuracy 65.714286, time elapsed 119.6820
+2025-04-05 04:15:12,632 INFO     no improve epochs: 24, best val accuracy: 71.428571
+2025-04-05 04:15:13,099 INFO     epoch 220 : training accuracy 75.714287, testing accuracy 65.714286, time elapsed 120.1491
+2025-04-05 04:15:13,099 INFO     no improve epochs: 25, best val accuracy: 71.428571
+2025-04-05 04:15:13,551 INFO     epoch 221 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 120.6011
+2025-04-05 04:15:13,551 INFO     no improve epochs: 26, best val accuracy: 71.428571
+2025-04-05 04:15:14,013 INFO     epoch 222 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 121.0629
+2025-04-05 04:15:14,013 INFO     no improve epochs: 27, best val accuracy: 71.428571
+2025-04-05 04:15:14,472 INFO     epoch 223 : training accuracy 71.428581, testing accuracy 65.714286, time elapsed 121.5219
+2025-04-05 04:15:14,472 INFO     no improve epochs: 28, best val accuracy: 71.428571
+2025-04-05 04:15:14,928 INFO     epoch 224 : training accuracy 71.428574, testing accuracy 65.714286, time elapsed 121.9783
+2025-04-05 04:15:14,928 INFO     no improve epochs: 29, best val accuracy: 71.428571
+2025-04-05 04:15:15,392 INFO     epoch 225 : training accuracy 72.857140, testing accuracy 65.714286, time elapsed 122.4419
+2025-04-05 04:15:15,392 INFO     no improve epochs: 30, best val accuracy: 71.428571
+2025-04-05 04:15:15,849 INFO     epoch 226 : training accuracy 72.857147, testing accuracy 68.571429, time elapsed 122.8993
+2025-04-05 04:15:15,850 INFO     no improve epochs: 31, best val accuracy: 71.428571
+2025-04-05 04:15:16,319 INFO     epoch 227 : training accuracy 81.428574, testing accuracy 65.714286, time elapsed 123.3685
+2025-04-05 04:15:16,319 INFO     no improve epochs: 32, best val accuracy: 71.428571
+2025-04-05 04:15:16,775 INFO     epoch 228 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 123.8253
+2025-04-05 04:15:16,776 INFO     no improve epochs: 33, best val accuracy: 71.428571
+2025-04-05 04:15:17,241 INFO     epoch 229 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 124.2912
+2025-04-05 04:15:17,241 INFO     no improve epochs: 34, best val accuracy: 71.428571
+2025-04-05 04:15:17,707 INFO     epoch 230 : training accuracy 75.714287, testing accuracy 62.857143, time elapsed 124.7569
+2025-04-05 04:15:17,707 INFO     no improve epochs: 35, best val accuracy: 71.428571
+2025-04-05 04:15:18,175 INFO     epoch 231 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 125.2252
+2025-04-05 04:15:18,175 INFO     no improve epochs: 36, best val accuracy: 71.428571
+2025-04-05 04:15:18,630 INFO     epoch 232 : training accuracy 80.000000, testing accuracy 65.714286, time elapsed 125.6802
+2025-04-05 04:15:18,630 INFO     no improve epochs: 37, best val accuracy: 71.428571
+2025-04-05 04:15:19,080 INFO     epoch 233 : training accuracy 72.857140, testing accuracy 68.571429, time elapsed 126.1299
+2025-04-05 04:15:19,080 INFO     no improve epochs: 38, best val accuracy: 71.428571
+2025-04-05 04:15:19,534 INFO     epoch 234 : training accuracy 78.571426, testing accuracy 62.857143, time elapsed 126.5835
+2025-04-05 04:15:19,534 INFO     no improve epochs: 39, best val accuracy: 71.428571
+2025-04-05 04:15:19,993 INFO     epoch 235 : training accuracy 78.571434, testing accuracy 62.857143, time elapsed 127.0432
+2025-04-05 04:15:19,993 INFO     no improve epochs: 40, best val accuracy: 71.428571
+2025-04-05 04:15:20,449 INFO     epoch 236 : training accuracy 80.000008, testing accuracy 65.714286, time elapsed 127.4992
+2025-04-05 04:15:20,449 INFO     no improve epochs: 41, best val accuracy: 71.428571
+2025-04-05 04:15:20,903 INFO     epoch 237 : training accuracy 82.857140, testing accuracy 62.857143, time elapsed 127.9525
+2025-04-05 04:15:20,903 INFO     no improve epochs: 42, best val accuracy: 71.428571
+2025-04-05 04:15:21,365 INFO     epoch 238 : training accuracy 75.714287, testing accuracy 74.285714, time elapsed 128.4151
+2025-04-05 04:15:21,365 INFO     failed paths test: []
+2025-04-05 04:15:21,365 INFO     Confusion matrix: test
+2025-04-05 04:15:21,365 INFO     [[2 0 2 1 0 0 0]
+ [0 4 1 0 0 0 0]
+ [0 0 5 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [2 0 0 0 2 0 1]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:15:21,400 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch238_val74_train76.pt.
+2025-04-05 04:15:21,862 INFO     epoch 239 : training accuracy 80.000000, testing accuracy 62.857143, time elapsed 128.9120
+2025-04-05 04:15:21,862 INFO     no improve epochs: 1, best val accuracy: 74.285714
+2025-04-05 04:15:22,314 INFO     epoch 240 : training accuracy 72.857147, testing accuracy 62.857143, time elapsed 129.3636
+2025-04-05 04:15:22,314 INFO     no improve epochs: 2, best val accuracy: 74.285714
+2025-04-05 04:15:22,776 INFO     epoch 241 : training accuracy 78.571434, testing accuracy 68.571429, time elapsed 129.8256
+2025-04-05 04:15:22,776 INFO     no improve epochs: 3, best val accuracy: 74.285714
+2025-04-05 04:15:23,224 INFO     epoch 242 : training accuracy 80.000000, testing accuracy 65.714286, time elapsed 130.2736
+2025-04-05 04:15:23,224 INFO     no improve epochs: 4, best val accuracy: 74.285714
+2025-04-05 04:15:23,680 INFO     epoch 243 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 130.7302
+2025-04-05 04:15:23,680 INFO     no improve epochs: 5, best val accuracy: 74.285714
+2025-04-05 04:15:24,150 INFO     epoch 244 : training accuracy 82.857140, testing accuracy 65.714286, time elapsed 131.1999
+2025-04-05 04:15:24,150 INFO     no improve epochs: 6, best val accuracy: 74.285714
+2025-04-05 04:15:24,628 INFO     epoch 245 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 131.6782
+2025-04-05 04:15:24,628 INFO     no improve epochs: 7, best val accuracy: 74.285714
+2025-04-05 04:15:25,082 INFO     epoch 246 : training accuracy 78.571426, testing accuracy 62.857143, time elapsed 132.1320
+2025-04-05 04:15:25,082 INFO     no improve epochs: 8, best val accuracy: 74.285714
+2025-04-05 04:15:25,547 INFO     epoch 247 : training accuracy 75.714287, testing accuracy 62.857143, time elapsed 132.5969
+2025-04-05 04:15:25,547 INFO     no improve epochs: 9, best val accuracy: 74.285714
+2025-04-05 04:15:26,004 INFO     epoch 248 : training accuracy 82.857140, testing accuracy 60.000000, time elapsed 133.0535
+2025-04-05 04:15:26,004 INFO     no improve epochs: 10, best val accuracy: 74.285714
+2025-04-05 04:15:26,460 INFO     epoch 249 : training accuracy 85.714287, testing accuracy 62.857143, time elapsed 133.5103
+2025-04-05 04:15:26,460 INFO     no improve epochs: 11, best val accuracy: 74.285714
+2025-04-05 04:15:26,929 INFO     epoch 250 : training accuracy 71.428574, testing accuracy 68.571429, time elapsed 133.9788
+2025-04-05 04:15:26,929 INFO     no improve epochs: 12, best val accuracy: 74.285714
+2025-04-05 04:15:27,392 INFO     epoch 251 : training accuracy 67.142860, testing accuracy 65.714286, time elapsed 134.4415
+2025-04-05 04:15:27,392 INFO     no improve epochs: 13, best val accuracy: 74.285714
+2025-04-05 04:15:27,869 INFO     epoch 252 : training accuracy 75.714287, testing accuracy 68.571429, time elapsed 134.9186
+2025-04-05 04:15:27,869 INFO     no improve epochs: 14, best val accuracy: 74.285714
+2025-04-05 04:15:28,321 INFO     epoch 253 : training accuracy 75.714287, testing accuracy 74.285714, time elapsed 135.3708
+2025-04-05 04:15:28,321 INFO     failed paths test: []
+2025-04-05 04:15:28,321 INFO     Confusion matrix: test
+2025-04-05 04:15:28,321 INFO     [[2 0 1 1 0 1 0]
+ [0 4 1 0 0 0 0]
+ [0 0 5 0 0 0 0]
+ [0 0 0 5 0 0 0]
+ [2 0 0 0 2 0 1]
+ [0 0 0 0 0 3 2]
+ [0 0 0 0 0 0 5]]
+2025-04-05 04:15:28,367 INFO     The model has been saved as /scratch/ychen855/hand_gesture/st_gcn/exps/toyTest-win45/checkpoint_epoch253_val74_train76.pt.
+2025-04-05 04:15:28,828 INFO     epoch 254 : training accuracy 71.428574, testing accuracy 68.571429, time elapsed 135.8781
+2025-04-05 04:15:28,828 INFO     no improve epochs: 1, best val accuracy: 74.285714
+2025-04-05 04:15:29,287 INFO     epoch 255 : training accuracy 78.571426, testing accuracy 68.571429, time elapsed 136.3373
+2025-04-05 04:15:29,287 INFO     no improve epochs: 2, best val accuracy: 74.285714
+2025-04-05 04:15:29,749 INFO     epoch 256 : training accuracy 81.428574, testing accuracy 68.571429, time elapsed 136.7988
+2025-04-05 04:15:29,749 INFO     no improve epochs: 3, best val accuracy: 74.285714
+2025-04-05 04:15:30,194 INFO     epoch 257 : training accuracy 75.714287, testing accuracy 68.571429, time elapsed 137.2439
+2025-04-05 04:15:30,194 INFO     no improve epochs: 4, best val accuracy: 74.285714
+2025-04-05 04:15:30,639 INFO     epoch 258 : training accuracy 78.571426, testing accuracy 68.571429, time elapsed 137.6894
+2025-04-05 04:15:30,640 INFO     no improve epochs: 5, best val accuracy: 74.285714
+2025-04-05 04:15:31,117 INFO     epoch 259 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 138.1667
+2025-04-05 04:15:31,117 INFO     no improve epochs: 6, best val accuracy: 74.285714
+2025-04-05 04:15:31,587 INFO     epoch 260 : training accuracy 80.000000, testing accuracy 62.857143, time elapsed 138.6365
+2025-04-05 04:15:31,587 INFO     no improve epochs: 7, best val accuracy: 74.285714
+2025-04-05 04:15:32,049 INFO     epoch 261 : training accuracy 78.571426, testing accuracy 68.571429, time elapsed 139.0987
+2025-04-05 04:15:32,049 INFO     no improve epochs: 8, best val accuracy: 74.285714
+2025-04-05 04:15:32,520 INFO     epoch 262 : training accuracy 75.714287, testing accuracy 60.000000, time elapsed 139.5704
+2025-04-05 04:15:32,521 INFO     no improve epochs: 9, best val accuracy: 74.285714
+2025-04-05 04:15:32,993 INFO     epoch 263 : training accuracy 68.571434, testing accuracy 71.428571, time elapsed 140.0426
+2025-04-05 04:15:32,993 INFO     no improve epochs: 10, best val accuracy: 74.285714
+2025-04-05 04:15:33,447 INFO     epoch 264 : training accuracy 77.142868, testing accuracy 60.000000, time elapsed 140.4975
+2025-04-05 04:15:33,448 INFO     no improve epochs: 11, best val accuracy: 74.285714
+2025-04-05 04:15:33,915 INFO     epoch 265 : training accuracy 81.428574, testing accuracy 68.571429, time elapsed 140.9653
+2025-04-05 04:15:33,915 INFO     no improve epochs: 12, best val accuracy: 74.285714
+2025-04-05 04:15:34,371 INFO     epoch 266 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 141.4209
+2025-04-05 04:15:34,371 INFO     no improve epochs: 13, best val accuracy: 74.285714
+2025-04-05 04:15:34,848 INFO     epoch 267 : training accuracy 74.285713, testing accuracy 68.571429, time elapsed 141.8983
+2025-04-05 04:15:34,848 INFO     no improve epochs: 14, best val accuracy: 74.285714
+2025-04-05 04:15:35,315 INFO     epoch 268 : training accuracy 77.142860, testing accuracy 62.857143, time elapsed 142.3645
+2025-04-05 04:15:35,315 INFO     no improve epochs: 15, best val accuracy: 74.285714
+2025-04-05 04:15:35,763 INFO     epoch 269 : training accuracy 82.857140, testing accuracy 65.714286, time elapsed 142.8127
+2025-04-05 04:15:35,763 INFO     no improve epochs: 16, best val accuracy: 74.285714
+2025-04-05 04:15:36,248 INFO     epoch 270 : training accuracy 75.714287, testing accuracy 62.857143, time elapsed 143.2979
+2025-04-05 04:15:36,248 INFO     no improve epochs: 17, best val accuracy: 74.285714
+2025-04-05 04:15:36,719 INFO     epoch 271 : training accuracy 72.857140, testing accuracy 62.857143, time elapsed 143.7694
+2025-04-05 04:15:36,720 INFO     no improve epochs: 18, best val accuracy: 74.285714
+2025-04-05 04:15:37,194 INFO     epoch 272 : training accuracy 72.857147, testing accuracy 65.714286, time elapsed 144.2444
+2025-04-05 04:15:37,195 INFO     no improve epochs: 19, best val accuracy: 74.285714
+2025-04-05 04:15:37,643 INFO     epoch 273 : training accuracy 80.000008, testing accuracy 68.571429, time elapsed 144.6932
+2025-04-05 04:15:37,643 INFO     no improve epochs: 20, best val accuracy: 74.285714
+2025-04-05 04:15:38,096 INFO     epoch 274 : training accuracy 81.428574, testing accuracy 62.857143, time elapsed 145.1459
+2025-04-05 04:15:38,096 INFO     no improve epochs: 21, best val accuracy: 74.285714
+2025-04-05 04:15:38,554 INFO     epoch 275 : training accuracy 77.142860, testing accuracy 68.571429, time elapsed 145.6040
+2025-04-05 04:15:38,554 INFO     no improve epochs: 22, best val accuracy: 74.285714
+2025-04-05 04:15:39,008 INFO     epoch 276 : training accuracy 82.857140, testing accuracy 65.714286, time elapsed 146.0584
+2025-04-05 04:15:39,009 INFO     no improve epochs: 23, best val accuracy: 74.285714
+2025-04-05 04:15:39,461 INFO     epoch 277 : training accuracy 81.428574, testing accuracy 68.571429, time elapsed 146.5112
+2025-04-05 04:15:39,461 INFO     no improve epochs: 24, best val accuracy: 74.285714
+2025-04-05 04:15:39,925 INFO     epoch 278 : training accuracy 71.428574, testing accuracy 62.857143, time elapsed 146.9753
+2025-04-05 04:15:39,925 INFO     no improve epochs: 25, best val accuracy: 74.285714
+2025-04-05 04:15:40,390 INFO     epoch 279 : training accuracy 72.857147, testing accuracy 65.714286, time elapsed 147.4404
+2025-04-05 04:15:40,391 INFO     no improve epochs: 26, best val accuracy: 74.285714
+2025-04-05 04:15:40,846 INFO     epoch 280 : training accuracy 71.428574, testing accuracy 65.714286, time elapsed 147.8962
+2025-04-05 04:15:40,846 INFO     no improve epochs: 27, best val accuracy: 74.285714
+2025-04-05 04:15:41,306 INFO     epoch 281 : training accuracy 81.428574, testing accuracy 68.571429, time elapsed 148.3563
+2025-04-05 04:15:41,306 INFO     no improve epochs: 28, best val accuracy: 74.285714
+2025-04-05 04:15:41,764 INFO     epoch 282 : training accuracy 71.428574, testing accuracy 68.571429, time elapsed 148.8142
+2025-04-05 04:15:41,764 INFO     no improve epochs: 29, best val accuracy: 74.285714
+2025-04-05 04:15:42,218 INFO     epoch 283 : training accuracy 78.571426, testing accuracy 65.714286, time elapsed 149.2679
+2025-04-05 04:15:42,218 INFO     no improve epochs: 30, best val accuracy: 74.285714
+2025-04-05 04:15:42,668 INFO     epoch 284 : training accuracy 77.142845, testing accuracy 62.857143, time elapsed 149.7178
+2025-04-05 04:15:42,668 INFO     no improve epochs: 31, best val accuracy: 74.285714
+2025-04-05 04:15:43,120 INFO     epoch 285 : training accuracy 77.142868, testing accuracy 65.714286, time elapsed 150.1696
+2025-04-05 04:15:43,120 INFO     no improve epochs: 32, best val accuracy: 74.285714
+2025-04-05 04:15:43,587 INFO     epoch 286 : training accuracy 82.857140, testing accuracy 65.714286, time elapsed 150.6365
+2025-04-05 04:15:43,587 INFO     no improve epochs: 33, best val accuracy: 74.285714
+2025-04-05 04:15:44,050 INFO     epoch 287 : training accuracy 81.428574, testing accuracy 71.428571, time elapsed 151.1001
+2025-04-05 04:15:44,050 INFO     no improve epochs: 34, best val accuracy: 74.285714
+2025-04-05 04:15:44,507 INFO     epoch 288 : training accuracy 71.428574, testing accuracy 62.857143, time elapsed 151.5568
+2025-04-05 04:15:44,507 INFO     no improve epochs: 35, best val accuracy: 74.285714
+2025-04-05 04:15:44,953 INFO     epoch 289 : training accuracy 75.714287, testing accuracy 62.857143, time elapsed 152.0026
+2025-04-05 04:15:44,953 INFO     no improve epochs: 36, best val accuracy: 74.285714
+2025-04-05 04:15:45,413 INFO     epoch 290 : training accuracy 80.000000, testing accuracy 65.714286, time elapsed 152.4632
+2025-04-05 04:15:45,413 INFO     no improve epochs: 37, best val accuracy: 74.285714
+2025-04-05 04:15:45,885 INFO     epoch 291 : training accuracy 78.571434, testing accuracy 68.571429, time elapsed 152.9347
+2025-04-05 04:15:45,885 INFO     no improve epochs: 38, best val accuracy: 74.285714
+2025-04-05 04:15:46,331 INFO     epoch 292 : training accuracy 72.857140, testing accuracy 65.714286, time elapsed 153.3814
+2025-04-05 04:15:46,332 INFO     no improve epochs: 39, best val accuracy: 74.285714
+2025-04-05 04:15:46,799 INFO     epoch 293 : training accuracy 75.714287, testing accuracy 65.714286, time elapsed 153.8492
+2025-04-05 04:15:46,799 INFO     no improve epochs: 40, best val accuracy: 74.285714
+2025-04-05 04:15:47,254 INFO     epoch 294 : training accuracy 80.000008, testing accuracy 62.857143, time elapsed 154.3037
+2025-04-05 04:15:47,254 INFO     no improve epochs: 41, best val accuracy: 74.285714
+2025-04-05 04:15:47,719 INFO     epoch 295 : training accuracy 74.285713, testing accuracy 65.714286, time elapsed 154.7693
+2025-04-05 04:15:47,720 INFO     no improve epochs: 42, best val accuracy: 74.285714
+2025-04-05 04:15:48,193 INFO     epoch 296 : training accuracy 78.571426, testing accuracy 62.857143, time elapsed 155.2430
+2025-04-05 04:15:48,193 INFO     no improve epochs: 43, best val accuracy: 74.285714
+2025-04-05 04:15:48,653 INFO     epoch 297 : training accuracy 74.285713, testing accuracy 62.857143, time elapsed 155.7025
+2025-04-05 04:15:48,653 INFO     no improve epochs: 44, best val accuracy: 74.285714
+2025-04-05 04:15:49,133 INFO     epoch 298 : training accuracy 82.857140, testing accuracy 68.571429, time elapsed 156.1826
+2025-04-05 04:15:49,133 INFO     no improve epochs: 45, best val accuracy: 74.285714
+2025-04-05 04:15:49,585 INFO     epoch 299 : training accuracy 72.857140, testing accuracy 68.571429, time elapsed 156.6350
+2025-04-05 04:15:49,585 INFO     no improve epochs: 46, best val accuracy: 74.285714

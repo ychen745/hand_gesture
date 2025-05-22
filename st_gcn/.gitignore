@@ -1,0 +1,28 @@
+#custom
+output
+exps
+data
+
+# mac
+.DS_Store
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+__pycache__/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# mypy
+.mypy_cache/
+
+.Parent
+.mlmodel
