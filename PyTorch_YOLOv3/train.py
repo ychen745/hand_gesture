@@ -14,15 +14,15 @@ from pytorchyolo.models import load_model
 from pytorchyolo.utils.logger import Logger
 from pytorchyolo.utils.utils import to_cpu, load_classes, print_environment_info, provide_determinism, worker_seed_set
 from pytorchyolo.utils.datasets import ListDataset
-from pytorchyolo.utils.augmentations import AUGMENTATION_TRANSFORMS
-#from pytorchyolo.utils.transforms import DEFAULT_TRANSFORMS
+# from pytorchyolo.utils.augmentations import AUGMENTATION_TRANSFORMS
+from pytorchyolo.utils.augmentations import get_transforms
 from pytorchyolo.utils.parse_config import parse_data_config
 from pytorchyolo.utils.loss import compute_loss
 from pytorchyolo.test import _evaluate, _create_validation_data_loader
 
 from terminaltables import AsciiTable
 
-from torchsummary import summary
+from torchinfo import summary
 
 
 def _create_data_loader(img_path, batch_size, img_size, n_cpu, multiscale_training=False):
@@ -41,6 +41,7 @@ def _create_data_loader(img_path, batch_size, img_size, n_cpu, multiscale_traini
     :return: Returns DataLoader
     :rtype: DataLoader
     """
+    AUGMENTATION_TRANSFORMS = get_transforms(img_size)
     dataset = ListDataset(
         img_path,
         img_size=img_size,
@@ -153,7 +154,7 @@ def run():
     # instead of: 0, 10, 20
     for epoch in range(args.start_epoch + 1, args.epochs + args.start_epoch + 1):
 
-        print(f"---- Training Epoch {args.start_epoch + 1} ----")
+        print(f"---- Training Epoch {epoch + 1} ----")
 
         model.train()  # Set model to training mode
 

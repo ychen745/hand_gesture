@@ -11,9 +11,49 @@ from PIL import ImageFile
 
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
+
+def pad_to_square(img, pad_value):
+    c, h, w = img.shape
+    dim_diff = np.abs(h - w)
+    # (upper / left) padding and (lower / right) padding
+    pad1, pad2 = dim_diff // 2, dim_diff - dim_diff // 2
+    # Determine padding
+    pad = (0, 0, pad1, pad2) if h <= w else (pad1, pad2, 0, 0)
+    # Add padding
+    img = F.pad(img, pad, "constant", value=pad_value)
+
+    return img, pad
+
+
 def resize(image, size):
     image = F.interpolate(image.unsqueeze(0), size=size, mode="nearest").squeeze(0)
     return image
+
+
+class ImageFolder(Dataset):
+    def __init__(self, folder_path, transform=None):
+        self.files = sorted(glob.glob("%s/*.*" % folder_path))
+        self.transform = transform
+
+    def __getitem__(self, index):
+
+        img_path = self.files[index % len(self.files)]
+        img = np.array(
+            Image.open(img_path).convert('RGB'),
+            dtype=np.uint8)
+
+        # Label Placeholder
+        boxes = np.zeros((1, 5))
+
+        # Apply transforms
+        if self.transform:
+            img, _ = self.transform((img, boxes))
+
+        return img_path, img
+
+    def __len__(self):
+        return len(self.files)
+
 
 class ListDataset(Dataset):
     def __init__(self, list_path, img_size=416, multiscale=True, transform=None):
@@ -47,8 +87,7 @@ class ListDataset(Dataset):
 
             img_path = self.img_files[index % len(self.img_files)].rstrip()
 
-            # img = np.array(Image.open(img_path).convert('RGB'), dtype=np.uint8)
-            img = np.array(Image.open(img_path).convert('RGB'), dtype=np.float32)
+            img = np.array(Image.open(img_path).convert('RGB'), dtype=np.uint8)
         except Exception:
             print(f"Could not read image '{img_path}'.")
             return
@@ -56,7 +95,6 @@ class ListDataset(Dataset):
         # ---------
         #  Label
         # ---------
-
         try:
             label_path = self.label_files[index % len(self.img_files)].rstrip()
 
@@ -64,8 +102,6 @@ class ListDataset(Dataset):
             with warnings.catch_warnings():
                 warnings.simplefilter("ignore")
                 boxes = np.loadtxt(label_path).reshape(-1, 5)
-                class_labels = boxes[:, 0]
-                boxes = boxes[:, 1:]
         except Exception:
             print(f"Could not read label '{label_path}'.")
             return
@@ -73,14 +109,10 @@ class ListDataset(Dataset):
         # -----------
         #  Transform
         # -----------
-
         if self.transform:
             try:
-                augmented = self.transform(image=img, bboxes=boxes, class_labels=class_labels)
-                img = augmented['image']
-                bb_targets = torch.cat((torch.from_numpy(np.array(augmented['class_labels'])).unsqueeze(-1), torch.from_numpy(augmented['bboxes'])), dim=1)
+                img, bb_targets = self.transform((img, boxes))
             except Exception:
-                print('label shape:', boxes.shape)
                 print("Could not apply transform.")
                 return
 
@@ -99,19 +131,13 @@ class ListDataset(Dataset):
             self.img_size = random.choice(
                 range(self.min_size, self.max_size + 1, 32))
 
-
         # Resize images to input shape
-        # imgs = torch.stack([resize(img, self.img_size) for img in imgs])
-        imgs = torch.stack(imgs)
+        imgs = torch.stack([resize(img, self.img_size) for img in imgs])
 
         # Add sample index to targets
-        idx_list = []
         for i, boxes in enumerate(bb_targets):
-            idx_list += [i] * boxes.shape[0]
-        
+            boxes[:, 0] = i
         bb_targets = torch.cat(bb_targets, 0)
-        bb_targets = torch.cat((torch.tensor(idx_list).unsqueeze(0).reshape((-1, 1)), bb_targets), dim=1)
-
 
         return paths, imgs, bb_targets
 

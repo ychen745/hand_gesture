@@ -1,0 +1,6 @@
+**/checkpoints
+**/weights
+**/scripts
+**/__pycache__/
+sbatch_jobs
+job_logs

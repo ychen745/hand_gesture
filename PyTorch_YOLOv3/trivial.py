@@ -1,11 +1,7 @@
 import os
-import shutil
-import random
 
-src = '/scratch/ychen855/hand_gesture/PyTorch-YOLOv3/data/custom/images'
-dst = '/scratch/ychen855/hand_gesture/PyTorch-YOLOv3/data/custom/test_images'
+src = '/scratch/ychen855/Data/hand_yolo'
 
-images = os.listdir(src)
-for i in range(10):
-    idx = random.randint(0, len(images))
-    shutil.copy(os.path.join(src, images[idx]), os.path.join(dst))
+with open(os.path.join(src, 'test.txt'), 'w') as f:
+    for fname in sorted(os.listdir(os.path.join(src, 'test', 'images'))):
+        f.write(os.path.join(src, 'test', 'images', fname) + '\n')
