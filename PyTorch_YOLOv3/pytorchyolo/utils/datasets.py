@@ -11,6 +11,60 @@ from PIL import ImageFile
 
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
+def pad_to_square(image, boxes, value=0):
+    h, w, c = image.shape
+
+    x1 = (boxes[:, 0] - boxes[:, 2] / 2) * w
+    x2 = (boxes[:, 0] + boxes[:, 2] / 2) * w
+    y1 = (boxes[:, 1] - boxes[:, 3] / 2) * h
+    y2 = (boxes[:, 1] + boxes[:, 3] / 2) * h
+
+    pad = [0] * 4
+
+    if h == w:
+        return image, boxes
+    elif h > w:
+        pad[0] = (h - w) // 2
+        pad[1] = (h - w) // 2 if (h - w) % 2 == 0 else (h - w) // 2 + 1
+    else:
+        pad[2] = (w - h) // 2
+        pad[3] = (w - h) // 2 if (w - h) % 2 == 0 else (w - h) // 2 + 1
+    
+    padded_w = w + pad[0] + pad[1]
+    padded_h = h + pad[2] + pad[3]
+
+    assert padded_w == h or padded_h == w
+
+    if pad[0] > 0:
+        left_padding = np.zeros((h, pad[0], 3), dtype=np.uint8)
+        image = np.concatenate((left_padding, image), axis=1)
+
+    if pad[1] > 0:
+        right_padding = np.zeros((h, pad[1], 3), dtype=np.uint8)
+        image = np.concatenate((image, right_padding), axis=1)
+
+    if pad[2] > 0:
+        top_padding = np.zeros((pad[2], w, 3), dtype=np.uint8)
+        image = np.concatenate((top_padding, image), axis=0)
+
+    if pad[3] > 0:
+        bottom_padding = np.zeros((pad[3], w, 3), dtype=np.uint8)
+        image = np.concatenate((image, bottom_padding), axis=0)
+
+    x1 += pad[0]
+    x2 += pad[0]
+    y1 += pad[2]
+    y2 += pad[2]
+
+    # new x center, new y center, new width, new height
+    boxes[:, 0] = ((x1 + x2) / 2) / padded_w
+    boxes[:, 1] = ((y1 + y2) / 2) / padded_h
+    boxes[:, 2] = (x2 - x1) / padded_w
+    boxes[:, 3] = (y2 - y1) / padded_h
+
+    return image, boxes
+
+
 def resize(image, size):
     image = F.interpolate(image.unsqueeze(0), size=size, mode="nearest").squeeze(0)
     return image
@@ -41,14 +95,11 @@ class ListDataset(Dataset):
     def __getitem__(self, index):
 
         # ---------
-        #  Image
+        #  Image and label
         # ---------
         try:
-
             img_path = self.img_files[index % len(self.img_files)].rstrip()
-
-            # img = np.array(Image.open(img_path).convert('RGB'), dtype=np.uint8)
-            img = np.array(Image.open(img_path).convert('RGB'), dtype=np.float32)
+            img = np.array(Image.open(img_path).convert('RGB'), dtype=np.uint8)
         except Exception:
             print(f"Could not read image '{img_path}'.")
             return
@@ -73,14 +124,19 @@ class ListDataset(Dataset):
         # -----------
         #  Transform
         # -----------
+        
+        try:
+            img, boxes = pad_to_square(img, boxes)
+        except Exception:
+            print(f"Could not pad to square.")
+            return
 
         if self.transform:
             try:
                 augmented = self.transform(image=img, bboxes=boxes, class_labels=class_labels)
-                img = augmented['image']
+                img = augmented['image'].float()
                 bb_targets = torch.cat((torch.from_numpy(np.array(augmented['class_labels'])).unsqueeze(-1), torch.from_numpy(augmented['bboxes'])), dim=1)
             except Exception:
-                print('label shape:', boxes.shape)
                 print("Could not apply transform.")
                 return
 

@@ -4,18 +4,11 @@ import cv2
 
 def get_transforms(size=416):
     train_transform = A.Compose([
-        A.LongestMaxSize(
-            max_size=size,
+        A.Resize(
+            height=size,
+            width=size,
             interpolation=cv2.INTER_LINEAR,
             mask_interpolation=cv2.INTER_NEAREST
-        ),
-        A.PadIfNeeded(
-            min_height=size,
-            min_width=size,
-            position="center",
-            border_mode=cv2.BORDER_CONSTANT,
-            fill=0,
-            fill_mask=0
         ),
         # A.HorizontalFlip(p=0.5),
         # A.RandomBrightnessContrast(p=0.2),

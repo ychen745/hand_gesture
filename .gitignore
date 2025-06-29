@@ -4,3 +4,5 @@
 **/__pycache__/
 sbatch_jobs
 job_logs
+**/scripts/*
+

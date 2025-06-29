@@ -77,6 +77,7 @@ def run():
     parser.add_argument("--logdir", type=str, default="logs", help="Directory for training log files (e.g. for TensorBoard)")
     parser.add_argument("--seed", type=int, default=-1, help="Makes results reproducable. Set -1 to disable.")
     parser.add_argument("--checkpoints_dir", type=str, help="Path to save checkpoints.")
+    parser.add_argument("--earlystopping", type=int, help="Earlystopping counter.")
 
     args = parser.parse_args()
     print(f"Command line arguments: {args}")
@@ -105,7 +106,7 @@ def run():
 
     # Print model
     if args.verbose:
-        summary(model, input_size=(3, model.hyperparams['height'], model.hyperparams['height']))
+        summary(model, input_size=(1, 3, model.hyperparams['height'], model.hyperparams['height']))
 
     mini_batch_size = model.hyperparams['batch'] // model.hyperparams['subdivisions']
 
@@ -149,6 +150,9 @@ def run():
     else:
         print("Unknown optimizer. Please choose between (adam, sgd).")
 
+
+    best_map = 0.0
+    counter = 0
     # skip epoch zero, because then the calculations for when to evaluate/checkpoint makes more intuitive sense
     # e.g. when you stop after 30 epochs and evaluate every 10 epochs then the evaluations happen after: 10,20,30
     # instead of: 0, 10, 20
@@ -197,29 +201,29 @@ def run():
                 # Reset gradients
                 optimizer.zero_grad()
 
-            # ############
-            # Log progress
-            # ############
-            if args.verbose:
-                print(AsciiTable(
-                    [
-                        ["Type", "Value"],
-                        ["IoU loss", float(loss_components[0])],
-                        ["Object loss", float(loss_components[1])],
-                        ["Class loss", float(loss_components[2])],
-                        ["Loss", float(loss_components[3])],
-                        ["Batch loss", to_cpu(loss).item()],
-                    ]).table)
+        # ############
+        # Log progress
+        # ############
+        if args.verbose:
+            print(AsciiTable(
+                [
+                    ["Type", "Value"],
+                    ["IoU loss", float(loss_components[0])],
+                    ["Object loss", float(loss_components[1])],
+                    ["Class loss", float(loss_components[2])],
+                    ["Loss", float(loss_components[3])],
+                    ["Batch loss", to_cpu(loss).item()],
+                ]).table)
 
-            # Tensorboard logging
-            tensorboard_log = [
-                ("train/iou_loss", float(loss_components[0])),
-                ("train/obj_loss", float(loss_components[1])),
-                ("train/class_loss", float(loss_components[2])),
-                ("train/loss", to_cpu(loss).item())]
-            logger.list_of_scalars_summary(tensorboard_log, batches_done)
+        # Tensorboard logging
+        tensorboard_log = [
+            ("train/iou_loss", float(loss_components[0])),
+            ("train/obj_loss", float(loss_components[1])),
+            ("train/class_loss", float(loss_components[2])),
+            ("train/loss", to_cpu(loss).item())]
+        logger.list_of_scalars_summary(tensorboard_log, batches_done)
 
-            model.seen += imgs.size(0)
+        model.seen += imgs.size(0)
 
         # #############
         # Save progress
@@ -257,6 +261,18 @@ def run():
                     ("validation/mAP", AP.mean()),
                     ("validation/f1", f1.mean())]
                 logger.list_of_scalars_summary(evaluation_metrics, epoch)
+
+                if AP.mean() > best_map:
+                    best_map = AP.mean()
+                    checkpoint_path = os.path.join(args.checkpoints_dir, 'best.pth')
+                    print(f"---- Saving new best model checkpoint to: '{checkpoint_path}' ----")
+                    torch.save(model.state_dict(), checkpoint_path)
+                    counter = 0
+                else:
+                    counter += 1
+                    if counter > args.earlystopping:
+                        print(f'Epoch {epoch}, early stopping by AP.')
+                        exit()
             
             print(f'Precision: {precision}, recall: {recall} AP: {AP}, f1: {f1}, ap_class: {ap_class}\n')
 
